@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MIS_Prog_App"
         mc:Ignorable="d"
-        Title="Registration" Height="450" Width="800">
+        Title="Registration" 
+        Height="450" Width="800">
     <Grid>
         
     </Grid>
