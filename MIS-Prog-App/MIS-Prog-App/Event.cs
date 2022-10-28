@@ -10,30 +10,23 @@ namespace MIS_Prog_App
     public class Event
     {
         public string Title { get; set; }
-        public string eventType { get; set; }
-        public string eventDept { get; set; }
         public string Location {get; set;}
-        public string Company{get; set;}
-        public DateTime eventDate { get; set; }
-        public string recruitorName {get; set;}
+        public DateTime eventStartTime { get; set; }
+        public DateTime eventEndTime { get; set; }
         
-        public Event(string title, string type, string loc, string date)
+        public Event(string title, string loc, string start, string end)
         {
             this.Title=title;
-            this.eventType = type;
-            this.eventDept=string.Empty;
             this.Location = loc;
-            this.eventDate = DateTime.Parse(date);
-            this.Company = string.Empty;
-            this.recruitorName = string.Empty;
+            this.eventStartTime = DateTime.Parse(start);
+            this.eventEndTime = DateTime.Parse(end);
         }
 
         public override string ToString()
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            return $"{Title}" +
-                $"\n{eventType} by {eventDept}" +
-                $"\n{Location} at {eventDate}";
+            return $"{Title}" + 
+                $"\n{Location} from {eventStartTime} to {eventEndTime}";
             Console.ResetColor();
         }
     }
