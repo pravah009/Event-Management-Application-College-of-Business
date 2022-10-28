@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:MIS_Prog_App"
         xmlns:fa ="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         mc:Ignorable="d"
-        Height="740" Width="1280" WindowStartupLocation="CenterScreen"
-        WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+        Height="450" Width="800" WindowStartupLocation="CenterScreen"
+        Background="Transparent">
         
     <Grid>
         <Grid.ColumnDefinitions>
@@ -18,7 +18,7 @@
         
         <!--Left Menu-->
 
-        <Border x:Name="LeftMenu" CornerRadius="10 0 0 10">
+        <Border x:Name="LeftMenu" >
             <Border.Background>
                 <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
                     <GradientStop Color="Crimson"/>
@@ -30,7 +30,7 @@
                 <!--Title-->
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 35 0 0" Height="55">
 
-                    <Border CornerRadius="10" Width="200" Height="40">
+                    <Border Width="200" Height="40">
                         <Border.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
                             </LinearGradientBrush >
@@ -45,22 +45,22 @@
                 <Separator Height="0.8" Margin="20 30" Background="MintCream"/>
                 
                 <!--Menu Buttons-->
-                <Button Style="{StaticResource menuButton}" Click="Button_Click">
-                    <StackPanel x:Name="AddButton" Orientation="Horizontal">
+                <Button x:Name="AddButton1" Style="{StaticResource menuButton}" Click="AddButton1_Click" >
+                    <StackPanel x:Name="Nothing" Orientation="Horizontal">
                         <fa:IconImage Icon="Plus" Style="{StaticResource menuButtonIcon}"/>
                         <TextBlock Text="Add" FontSize="22" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
 
-                <Button Style="{StaticResource menuButton}">
+                <Button x:Name="DeleteButton1" Style="{StaticResource menuButton}" Click="DeleteButton1_Click">
                     <StackPanel x:Name="DeleteButton" Orientation="Horizontal">
                         <fa:IconImage Icon="Minus" Style="{StaticResource menuButtonIcon}"/>
                         <TextBlock Text="Delete" FontSize="22" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
 
-                <Button Style="{StaticResource menuButton}">
-                    <StackPanel x:Name="EditButton" Orientation="Horizontal">
+                <Button x:Name="EditButton1" Style="{StaticResource menuButton}">
+                    <StackPanel x:Name="Nothing2" Orientation="Horizontal">
                         <fa:IconImage Icon="Edit" Style="{StaticResource menuButtonIcon}"/>
                         <TextBlock Text="Edit" FontSize="22" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
@@ -72,12 +72,13 @@
 
         <!--Main Section-->
 
-        <Border x:Name="MainMenu" Grid.Column="1" CornerRadius="0 10 10 0">
+        <Border x:Name="MainMenu" Grid.Column="1">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
                     <GradientStop Color="MintCream"/>
                 </LinearGradientBrush >
             </Border.Background>
+            <Frame x:Name ="Main" NavigationUIVisibility="Hidden"/>
         </Border>
 
     </Grid>

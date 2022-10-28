@@ -12,30 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using Window = System.Windows.Window;
 
 namespace MIS_Prog_App
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Add.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Add : Page
     {
-        public MainWindow()
+        public Add()
         {
             InitializeComponent();
-        }
-
-        private void AdminButton_Click(object sender, RoutedEventArgs e)
-        {
-            Window adminWin = new Admin();
-            
-        }
-
-        private void StudentButton_Click(object sender, RoutedEventArgs e)
-        {
-            Window studentWin = new Student();
         }
     }
 }

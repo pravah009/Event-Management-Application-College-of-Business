@@ -24,9 +24,19 @@ namespace MIS_Prog_App
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void AddButton1_Click(object sender, RoutedEventArgs e)
         {
-            
+            Main.Content = new Add();
+        }
+
+        private void DeleteButton1_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Delete();
+        }
+
+        private void EditButton1_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Edit();
         }
     }
 }

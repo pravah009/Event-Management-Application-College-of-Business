@@ -4,9 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MIS_Prog_App"
+        xmlns:fa ="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="Crimson">
     <Grid>
+        <!--Menu Buttons-->
+        <Button x:Name="AdminButton" Style="{StaticResource menuButton}"  HorizontalAlignment="Center" Margin="0,132,0,240" Width="800" Click="AdminButton_Click" >
+            <StackPanel x:Name="Nothing" Orientation="Horizontal" Margin="300,0,0,0" HorizontalAlignment="Left" Width="340">
+                <fa:IconImage Icon="Pencil" Style="{StaticResource menuButtonIcon}"/>
+                <TextBlock FontSize="32" Style="{StaticResource menuButtonText}" Text="Admin" Height="47"/>
+            </StackPanel>
+        </Button>
 
+        <Button x:Name="StudentButton" Style="{StaticResource menuButton}" HorizontalAlignment="Center" Margin="0,234,0,115" Width="800" Click="StudentButton_Click">
+            <StackPanel x:Name="DeleteButton" Orientation="Horizontal" Margin="295,0,271,0">
+                <fa:IconImage Icon="Book" Style="{StaticResource menuButtonIcon}"/>
+                <TextBlock FontSize="32" Style="{StaticResource menuButtonText}"><Run Language="es-es" Text="Student"/></TextBlock>
+            </StackPanel>
+        </Button>
     </Grid>
 </Window>
