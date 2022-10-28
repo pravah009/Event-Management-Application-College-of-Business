@@ -23,5 +23,10 @@ namespace MIS_Prog_App
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
