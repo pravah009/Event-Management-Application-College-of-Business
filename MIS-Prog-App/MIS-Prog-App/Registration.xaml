@@ -5,9 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MIS_Prog_App"
         mc:Ignorable="d"
-        Title="Registration" 
-        Height="450" Width="800">
-    <Grid>
-        
+        Height="450" Width="400" Background="MintCream">
+    <Grid Margin="0,210,0,4">
+
+
+        <Separator Height="0.8" Margin="20,0,20,219" Background="Black"/>
+
+        <TextBlock Height="20" HorizontalAlignment="Center" Margin="0,17,0,0" x:Name ="errormessage" VerticalAlignment="Top" Width="247"  OpacityMask="Crimson" Foreground="#FFE5572C" ><Run Language="es-es" Text="Please enter the following information to RSVP"/></TextBlock>
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="48,63,0,0" x:Name="textBlockFirstname" VerticalAlignment="Top" Width="110" ><Run Text="First Name"/><Run Language="es-es" Text=":"/></TextBlock>
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="48,93,0,0" x:Name="textBlockLastName" VerticalAlignment="Top" Width="110" ><Run Language="es-es" Text="Last Name:"/></TextBlock>
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="48,124,0,0" x:Name="textBlockEmailId" VerticalAlignment="Top" Width="110" ><Run Language="es-es" Text="Email:"/></TextBlock>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="138,64,0,0" x:Name="RegFN" VerticalAlignment="Top" Width="222" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="138,94,0,0" x:Name="RegLN" VerticalAlignment="Top" Width="222" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="138,124,0,0" x:Name="RegEmail" VerticalAlignment="Top" Width="222" />
+        <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="150,174,0,0" x:Name="RegSubmit" VerticalAlignment="Top" Width="70"  />
+        <TextBlock Height="20" HorizontalAlignment="Center" Margin="0,-191,0,0" x:Name ="errormessage_Copy" VerticalAlignment="Top" Width="70"  OpacityMask="Crimson" Foreground="#FFE5572C" ><Run Language="es-es" Text="Event Details"/><LineBreak/><Run Language="es-es"/></TextBlock>
+        <RichTextBox Margin="10,-154,10,251">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
     </Grid>
 </Window>

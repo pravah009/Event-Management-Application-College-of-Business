@@ -27,8 +27,7 @@ namespace MIS_Prog_App
         {
            
             InitializeComponent();
-
-            
+                        
         }
 
         private void AdminButton_Click(object sender, RoutedEventArgs e)
