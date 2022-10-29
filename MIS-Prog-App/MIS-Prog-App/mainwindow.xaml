@@ -8,8 +8,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Background="Crimson">
     <Grid>
-        <ListBox x:Name="eventsListBox"
-                 Margin="383,58,35,57" />
 
         <!--Menu Buttons-->
         <Button x:Name="AdminButton" Style="{StaticResource menuButton}"  HorizontalAlignment="Center" Margin="0,132,0,240" Width="800" Click="AdminButton_Click" >
