@@ -38,5 +38,12 @@ namespace MIS_Prog_App
         {
             Main.Content = new Edit();
         }
+
+        private void BackButton1_Click(object sender, RoutedEventArgs e)
+        {
+            Window mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }
