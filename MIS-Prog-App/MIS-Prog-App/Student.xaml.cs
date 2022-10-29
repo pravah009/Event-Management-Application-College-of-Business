@@ -24,20 +24,20 @@ namespace MIS_Prog_App
 
         public Student()
         {
-            events = new List<Event>();
+            //    events = new List<Event>();
 
-            InitializeComponent();
-            string[] calendarExp = File.ReadAllLines("CalendarExport.csv");
-            for (int i = 1; i < calendarExp.Length; i++)
-            {
-                string thatLine = calendarExp[i];
-                string[] elements = thatLine.Split(",");
-                Event ev = new Event(elements[0], elements[1], elements[2], elements[3]);
-                events.Add(ev);
-            }
-            this.eventsListBox.ItemsSource = events;
+            //    InitializeComponent();
+            //    string[] calendarExp = File.ReadAllLines("CalendarExport.csv");
+            //    for (int i = 1; i < calendarExp.Length; i++)
+            //    {
+            //        string thatLine = calendarExp[i];
+            //        string[] elements = thatLine.Split(",");
+            //        Event ev = new Event(elements[0], elements[1], elements[2], elements[3]);
+            //        events.Add(ev);
+            //    }
+            //    this.eventsListBox.ItemsSource = events;
         }
 
-        
+
     }
 }
