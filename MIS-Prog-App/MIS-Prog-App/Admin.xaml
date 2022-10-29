@@ -59,12 +59,20 @@
                     </StackPanel>
                 </Button>
 
-                <Button x:Name="EditButton1" Style="{StaticResource menuButton}">
+                <Button x:Name="EditButton1" Style="{StaticResource menuButton}" Click="EditButton1_Click">
                     <StackPanel x:Name="Nothing2" Orientation="Horizontal">
                         <fa:IconImage Icon="Edit" Style="{StaticResource menuButtonIcon}"/>
                         <TextBlock Text="Edit" FontSize="22" Style="{StaticResource menuButtonText}"/>
                     </StackPanel>
                 </Button>
+                <Button x:Name="BackButton1" Style="{StaticResource menuButton}" Height="43" Click="BackButton1_Click" >
+                    <StackPanel x:Name="Nothing1" Orientation="Horizontal">
+                        <fa:IconImage Icon="Backward" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock Text="Back" FontSize="22" Style="{StaticResource menuButtonText}" RenderTransformOrigin="0.624,3.088"/>
+                    </StackPanel>
+                </Button>
+
+
 
             </StackPanel>
             
