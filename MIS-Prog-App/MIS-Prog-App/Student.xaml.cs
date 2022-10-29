@@ -8,10 +8,13 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml;
+using RichTextBox = System.Windows.Controls.RichTextBox;
 
 namespace MIS_Prog_App
 {
@@ -27,6 +30,18 @@ namespace MIS_Prog_App
         public Student()
         {
 
+<<<<<<< HEAD
+             InitializeComponent();
+            //    string[] calendarExp = File.ReadAllLines("CalendarExport.csv");
+            //    for (int i = 1; i < calendarExp.Length; i++)
+            //    {
+            //        string thatLine = calendarExp[i];
+            //        string[] elements = thatLine.Split(",");
+            //        Event ev = new Event(elements[0], elements[1], elements[2], elements[3]);
+            //        events.Add(ev);
+            //    }
+            //    this.eventsListBox.ItemsSource = events;
+=======
             InitializeComponent();
 
             //events = new List<Event>();
@@ -39,6 +54,7 @@ namespace MIS_Prog_App
             //    events.Add(ev);
             //}
             //this.EventsListBox.ItemsSource = events;
+>>>>>>> 86066e9cf0c372f3c8ffc7b9a70afe4e0e3c6e4c
         }
 
         private void BackButton1_Click(object sender, RoutedEventArgs e)
@@ -46,6 +62,33 @@ namespace MIS_Prog_App
             Window mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
+        }
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+           RichTextBox textBox = new RichTextBox();
+
+            FlowDocument flowDocument = new FlowDocument();
+
+            Paragraph paragraph = new Paragraph();
+            paragraph.Inlines.Add(new Run("Ernst and Young\n"));
+            flowDocument.Blocks.Add(paragraph);
+
+            Paragraph paragraph1 = new Paragraph();
+            paragraph.Inlines.Add(new Run("AH3033\n"));
+            flowDocument.Blocks.Add(paragraph1);
+
+            Paragraph paragraph2 = new Paragraph();
+            paragraph.Inlines.Add(new Run("Start time: 9:30AM\n"));
+            flowDocument.Blocks.Add(paragraph2);
+
+            Paragraph paragraph3 = new Paragraph();
+            paragraph.Inlines.Add(new Run("End time: 11:00am\n"));
+            flowDocument.Blocks.Add(paragraph3);
+
+            richie.Document = flowDocument;
+
         }
     }
 }

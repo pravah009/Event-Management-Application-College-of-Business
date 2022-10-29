@@ -68,7 +68,13 @@
                     </LinearGradientBrush >
                 </Border.Background>
             <ListBox Name="EventsListBox"/>
+            
         </Border>
-
+        <RichTextBox x:Name="richie" Grid.Column="1" Margin="25,10,275,274" >
+            
+        </RichTextBox>
+        <Button Margin="187,252,275,114" Grid.Column="1" Click="Button_Click">
+            
+        </Button>
         </Grid>
 </Window>

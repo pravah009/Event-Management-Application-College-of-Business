@@ -18,6 +18,19 @@
                 <RowDefinition Height="252*" />
 
             </Grid.RowDefinitions>
+<<<<<<< HEAD
+            <TextBlock Height="20" HorizontalAlignment="Left" Margin="67,0,0,0" x:Name ="errormessage" VerticalAlignment="Top" Width="247"  OpacityMask="Crimson" Foreground="#FFE5572C" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="35,19,0,0" Name="textBlockFirstname" Text="Event Title" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="35,49,0,0" Name="textBlockLastName" Text="Location:" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="35,80,0,0" Name="textBlockEmailId" Text="Start Time" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="24" HorizontalAlignment="Left" Margin="35,108,0,0" Name="textBlockAddress" Text="End Time" VerticalAlignment="Top" Width="110" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="183,20,0,0" x:Name="eventtitletxtbox" VerticalAlignment="Top" Width="222" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="183,50,0,0" x:Name="locationtxtbox" VerticalAlignment="Top" Width="222" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="183,80,0,0" x:Name="starttimetxtbox" VerticalAlignment="Top" Width="222" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="183,109,0,0" x:Name="endtitletxtbox" VerticalAlignment="Top" Width="222" />
+            <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="183,204,0,0" Name="Submit" VerticalAlignment="Top" Width="70" Click="Submit_Click" />
+            
+=======
             <TextBlock Height="20" HorizontalAlignment="Left" Margin="67,0,0,0" x:Name ="errormessage" VerticalAlignment="Top" Width="247"  OpacityMask="Crimson" Foreground="MintCream" />
             <TextBlock Height="23" HorizontalAlignment="Left" Margin="35,38,0,0" x:Name="textBlockFirstname" VerticalAlignment="Top" Width="110" FontSize="20" ><Run Text="Event Title"/><Run Language="es-es" Text=":"/></TextBlock>
             <TextBlock Height="23" HorizontalAlignment="Left" Margin="35,78,0,0" Name="textBlockLastName" Text="Location:" VerticalAlignment="Top" Width="110" FontSize="20" />
@@ -29,6 +42,7 @@
             <TextBox Height="23" HorizontalAlignment="Left" Margin="183,166,0,0" Name="textBoxAddress" VerticalAlignment="Top" Width="222" />
             <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="183,220,0,0" x:Name="AddSubmit" VerticalAlignment="Top" Width="70" Click="AddSubmit_Click" />
 
+>>>>>>> 86066e9cf0c372f3c8ffc7b9a70afe4e0e3c6e4c
         </Grid>
     </Grid>
 </Page>
