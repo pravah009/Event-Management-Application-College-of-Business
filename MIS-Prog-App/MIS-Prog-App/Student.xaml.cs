@@ -13,17 +13,15 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 using MIS_Prog_App.Model;
-=======
+
 using System.Xml;
 using RichTextBox = System.Windows.Controls.RichTextBox;
->>>>>>> 1c927f20e3243d62bf5b7d6b7855de464344c025
-=======
+
 using System.Xml;
-using RichTextBox = System.Windows.Controls.RichTextBox;
->>>>>>> 1c927f20e3243d62bf5b7d6b7855de464344c025
+
+
 
 namespace MIS_Prog_App
 {
@@ -39,7 +37,7 @@ namespace MIS_Prog_App
         public Student()
         {
 
-<<<<<<< HEAD
+
              InitializeComponent();
             //    string[] calendarExp = File.ReadAllLines("CalendarExport.csv");
             //    for (int i = 1; i < calendarExp.Length; i++)
@@ -50,20 +48,7 @@ namespace MIS_Prog_App
             //        events.Add(ev);
             //    }
             //    this.eventsListBox.ItemsSource = events;
-=======
-            InitializeComponent();
 
-            //events = new List<Event>();
-            //string[] calendarExp = File.ReadAllLines("CalendarExport.csv");
-            //for (int i = 1; i < calendarExp.Length; i++)
-            //{
-            //    string thatLine = calendarExp[i];
-            //    string[] elements = thatLine.Split(",");
-            //    Event ev = new Event(elements[0], elements[1], elements[2], elements[3]);
-            //    events.Add(ev);
-            //}
-            //this.EventsListBox.ItemsSource = events;
->>>>>>> 86066e9cf0c372f3c8ffc7b9a70afe4e0e3c6e4c
         }
 
         private void BackButton1_Click(object sender, RoutedEventArgs e)
@@ -76,8 +61,7 @@ namespace MIS_Prog_App
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-           RichTextBox textBox = new RichTextBox();
-
+           
             FlowDocument flowDocument = new FlowDocument();
 
             Paragraph paragraph = new Paragraph();
