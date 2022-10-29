@@ -38,6 +38,11 @@ namespace MIS_Prog_App
             //    this.eventsListBox.ItemsSource = events;
         }
 
-
+        private void BackButton1_Click(object sender, RoutedEventArgs e)
+        {
+            Window mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }
