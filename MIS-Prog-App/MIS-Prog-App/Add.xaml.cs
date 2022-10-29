@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MIS_Prog_App.Data;
+using MIS_Prog_App.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,9 +27,17 @@ namespace MIS_Prog_App
             InitializeComponent();
         }
 
-        private void Submit_Click(object sender, RoutedEventArgs e)
+        private void AddSubmit_Click(object sender, RoutedEventArgs e)
         {
-
+            using EventDBContext _db = new EventDBContext();
+            Event[] eves = _db.Events.ToArray<Event>();
+            string eventTitle = Convert.ToString(this.titleTB.Text);
+            string eventLocation = Convert.ToString(this.locationTB.Text);
+            string eventStart = Convert.ToString(this.eventStartTB.Text);
+            string eventEnd = Convert.ToString(this.eventEndTB.Text);
+            Event eve = new Event(eventTitle, eventLocation, eventStart, eventEnd);
+            _db.Events.Add(eve);
+            _db.SaveChanges();
         }
     }
 }

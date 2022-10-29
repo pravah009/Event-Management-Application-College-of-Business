@@ -8,13 +8,13 @@ using MIS_Prog_App.Model;
 
 namespace MIS_Prog_App.Data
 {
-    public class EventDBContext : DbContext
+    public class RegDBContext : DbContext
     {
-        public DbSet<Event> Events { get; set; }
+        public DbSet<Registration> RSVP { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlite($"Data Source=Data/events.db");
+            options.UseSqlite($"Data Source=Data/rsvp.db");
         }
     }
 }

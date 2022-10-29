@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MIS_Prog_App.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,26 @@ namespace MIS_Prog_App
     /// </summary>
     public partial class Registration : Window
     {
+        private string first;
+        private string last;
+        private string em;
+
         public Registration()
         {
             InitializeComponent();
+        }
+
+        
+        private void RegSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            using RegDBContext _db = new RegDBContext();
+            Registration[] regs = _db.RSVP.ToArray<Registration>();
+            string first = Convert.ToString(this.RegFN.Text);
+            string last = Convert.ToString(this.RegLN.Text);
+            string em = Convert.ToString(this.RegEmail.Text);
+            Registration regis = new Registration(first, last, em);
+            _db.RSVP.Add(regis);
+            _db.SaveChanges();
         }
     }
 }

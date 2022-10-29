@@ -13,8 +13,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+<<<<<<< HEAD
+<<<<<<< HEAD
+using MIS_Prog_App.Model;
+=======
 using System.Xml;
 using RichTextBox = System.Windows.Controls.RichTextBox;
+>>>>>>> 1c927f20e3243d62bf5b7d6b7855de464344c025
+=======
+using System.Xml;
+using RichTextBox = System.Windows.Controls.RichTextBox;
+>>>>>>> 1c927f20e3243d62bf5b7d6b7855de464344c025
 
 namespace MIS_Prog_App
 {
