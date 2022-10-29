@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MIS_Prog_App"
         xmlns:fa ="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="Crimson">
+        Height="450" Width="800" Background="Crimson">
     <Grid>
 
         <!--Menu Buttons-->
