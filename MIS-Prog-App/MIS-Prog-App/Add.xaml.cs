@@ -24,5 +24,10 @@ namespace MIS_Prog_App
         {
             InitializeComponent();
         }
+
+        private void Submit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
