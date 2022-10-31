@@ -7,12 +7,11 @@
       mc:Ignorable="d"
       d:DesignHeight="450"
       d:DesignWidth="800"
-      Title="Edit">
+      Title="Edit" Background="MintCream">
 
     <Grid>
-        <TextBlock Text="Edit"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   FontSize="40" />
+        <WrapPanel Name="wrappanel">
+            
+        </WrapPanel>
     </Grid>
 </Page>

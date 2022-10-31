@@ -7,12 +7,12 @@
       mc:Ignorable="d"
       d:DesignHeight="450"
       d:DesignWidth="800"
-      Title="Delete">
+      Title="Delete" Background="MintCream">
 
     <Grid>
-        <TextBlock Text="Delete"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   FontSize="40" />
+        <WrapPanel Name="wrappanel">
+            
+            
+            </WrapPanel>
     </Grid>
 </Page>

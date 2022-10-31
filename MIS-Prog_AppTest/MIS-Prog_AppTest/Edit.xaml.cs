@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MIS_Prog_AppTest.Data;
+using MIS_Prog_AppTest.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,23 @@ namespace MIS_Prog_AppTest
         public Edit()
         {
             InitializeComponent();
+
+            using EventManagerDBContext _db = new EventManagerDBContext();
+
+            Event[] eves = _db.Events.ToArray<Event>();
+
+
+
+            foreach (var eve in eves)
+            {
+                Label label = new Label();
+
+                label.Content = eve.ToString();
+                label.BorderThickness = new Thickness(5, 5, 5, 5);
+
+                wrappanel.Children.Add(label);
+            }
+
         }
     }
 }
