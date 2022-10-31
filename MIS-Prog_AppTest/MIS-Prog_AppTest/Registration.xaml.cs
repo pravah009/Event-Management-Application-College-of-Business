@@ -1,4 +1,4 @@
-﻿using MIS_Prog_App.Data;
+﻿using MIS_Prog_AppTest.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace MIS_Prog_App
+namespace MIS_Prog_AppTest
 {
     /// <summary>
     /// Interaction logic for Registration.xaml
@@ -29,7 +29,7 @@ namespace MIS_Prog_App
             InitializeComponent();
         }
 
-        
+
         private void RegSubmit_Click(object sender, RoutedEventArgs e)
         {
             //using EventManagerDBContext _db = new EventManagerDBContext();

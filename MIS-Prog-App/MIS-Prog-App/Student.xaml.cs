@@ -32,7 +32,7 @@ namespace MIS_Prog_App
     {
 
 
-        public List<Event> events;
+        //public List<Event> events;
 
         public Student()
         {
@@ -53,35 +53,35 @@ namespace MIS_Prog_App
 
         private void BackButton1_Click(object sender, RoutedEventArgs e)
         {
-            Window mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close();
+            //Window mainWindow = new MainWindow();
+            //mainWindow.Show();
+            //this.Close();
         }
-
-
+        
+        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
            
-            FlowDocument flowDocument = new FlowDocument();
-
-            Paragraph paragraph = new Paragraph();
-            paragraph.Inlines.Add(new Run("Ernst and Young\n"));
-            flowDocument.Blocks.Add(paragraph);
-
-            Paragraph paragraph1 = new Paragraph();
-            paragraph.Inlines.Add(new Run("AH3033\n"));
-            flowDocument.Blocks.Add(paragraph1);
-
-            Paragraph paragraph2 = new Paragraph();
-            paragraph.Inlines.Add(new Run("Start time: 9:30AM\n"));
-            flowDocument.Blocks.Add(paragraph2);
-
-            Paragraph paragraph3 = new Paragraph();
-            paragraph.Inlines.Add(new Run("End time: 11:00am\n"));
-            flowDocument.Blocks.Add(paragraph3);
-
-            richie.Document = flowDocument;
-
+            //FlowDocument flowDocument = new FlowDocument();
+            //
+            //Paragraph paragraph = new Paragraph();
+            //paragraph.Inlines.Add(new Run("Ernst and Young\n"));
+            //flowDocument.Blocks.Add(paragraph);
+            //
+            //Paragraph paragraph1 = new Paragraph();
+            //paragraph.Inlines.Add(new Run("AH3033\n"));
+            //flowDocument.Blocks.Add(paragraph1);
+            //
+            //Paragraph paragraph2 = new Paragraph();
+            //paragraph.Inlines.Add(new Run("Start time: 9:30AM\n"));
+            //flowDocument.Blocks.Add(paragraph2);
+            //
+            //Paragraph paragraph3 = new Paragraph();
+            //paragraph.Inlines.Add(new Run("End time: 11:00am\n"));
+            //flowDocument.Blocks.Add(paragraph3);
+            //
+            //richie.Document = flowDocument;
+        
         }
     }
 }

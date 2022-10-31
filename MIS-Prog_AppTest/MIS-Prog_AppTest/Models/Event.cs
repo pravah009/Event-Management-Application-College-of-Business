@@ -5,9 +5,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Controls;
 
-namespace MIS_Prog_App.Model
+namespace MIS_Prog_AppTest.Models
 {
     public class Event
     {

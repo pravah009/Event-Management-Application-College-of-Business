@@ -1,5 +1,5 @@
-﻿using MIS_Prog_App.Data;
-using MIS_Prog_App.Model;
+﻿using MIS_Prog_AppTest.Data;
+using MIS_Prog_AppTest.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MIS_Prog_App
+namespace MIS_Prog_AppTest
 {
     /// <summary>
     /// Interaction logic for Add.xaml

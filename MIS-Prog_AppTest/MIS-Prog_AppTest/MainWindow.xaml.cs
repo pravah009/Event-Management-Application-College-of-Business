@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MIS_Prog_AppTest;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -16,7 +17,7 @@ using System.Windows.Shapes;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Window = System.Windows.Window;
 
-namespace MIS_Prog_App
+namespace MIS_Prog_AppTest
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -25,17 +26,17 @@ namespace MIS_Prog_App
     {
         public MainWindow()
         {
-           
+
             InitializeComponent();
-                        
+
         }
 
         private void AdminButton_Click(object sender, RoutedEventArgs e)
         {
-            //Window adminWin = new Admin();
-            //adminWin.Show();
-            //this.Close();
-            
+            Window adminWin = new Admin();
+            adminWin.Show();
+            this.Close();
+
         }
 
         private void StudentButton_Click(object sender, RoutedEventArgs e)
