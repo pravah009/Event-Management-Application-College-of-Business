@@ -93,7 +93,7 @@
                     <GradientStop Color="MintCream" />
                 </LinearGradientBrush >
             </Border.Background>
-            <WrapPanel Name= "wrappanel">
+            <WrapPanel Name="wrappanel">
 
 
             </WrapPanel>

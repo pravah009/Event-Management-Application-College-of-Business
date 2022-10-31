@@ -15,8 +15,8 @@ namespace MIS_Prog_AppTest.Models
         public int ID { get; set; }
         public string Title { get; set; }
         public string Location { get; set; }
-        public DateTime eventStartTime { get; set; }
-        public DateTime eventEndTime { get; set; }
+        public string eventStartTime { get; set; }
+        public string eventEndTime { get; set; }
 
         public Event()
         {
@@ -26,8 +26,8 @@ namespace MIS_Prog_AppTest.Models
         {
             Title = title;
             Location = loc;
-            eventStartTime = DateTime.Parse(start);
-            eventEndTime = DateTime.Parse(end);
+            eventStartTime = start;
+            eventEndTime = end;
         }
 
         public override string ToString()

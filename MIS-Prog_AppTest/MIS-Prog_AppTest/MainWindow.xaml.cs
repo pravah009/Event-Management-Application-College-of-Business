@@ -1,4 +1,6 @@
 ﻿using MIS_Prog_AppTest;
+using MIS_Prog_AppTest.Data;
+using MIS_Prog_AppTest.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -26,8 +28,32 @@ namespace MIS_Prog_AppTest
     {
         public MainWindow()
         {
+            string eventsFile = File.ReadAllText("CalendarExport.csv");
+
+            using EventManagerDBContext _db = new EventManagerDBContext();
 
             InitializeComponent();
+            List<string> items = new List<string>();
+
+
+            for (int j = 0; j < eventsFile.IndexOf('\n'); j++)
+            {
+                items.Add(eventsFile.Substring(j, eventsFile.IndexOf('\n') - 1));
+                j = eventsFile.IndexOf('\n');
+            }
+
+
+            foreach (var item in items)
+            {
+                string[] words = item.Split(',');
+                string eventTitle = words[0];
+                string eventLocation = words[1];
+                string eventStart = words[2];
+                string eventEnd = words[3];
+                Event eve = new Event(eventTitle, eventLocation, eventStart, eventEnd);
+                _db.Events.Add(eve);
+            }
+            _db.SaveChanges();
 
         }
 

@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace MIS_Prog_AppTest
 {
@@ -29,12 +30,15 @@ namespace MIS_Prog_AppTest
 
         private void AddSubmit_Click(object sender, RoutedEventArgs e)
         {
-            //using EventManagerDBContext _db = new EventManagerDBContext();
+            
+
+            using EventManagerDBContext _db = new EventManagerDBContext();
             //Event[] eves = _db.Events.ToArray<Event>();
             //string eventTitle = Convert.ToString(this.titleTB.Text);
             //string eventLocation = Convert.ToString(this.locationTB.Text);
             //string eventStart = Convert.ToString(this.eventStartTB.Text);
             //string eventEnd = Convert.ToString(this.eventEndTB.Text);
+           
             //Event eve = new Event(eventTitle, eventLocation, eventStart, eventEnd);
             //_db.Events.Add(eve);
             //_db.SaveChanges();
