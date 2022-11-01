@@ -10,10 +10,7 @@
       Title="Edit" Background="MintCream">
 
     <Grid>
-        <ScrollViewer>
-            <StackPanel Name="stackpanel" >
+        <ListBox Name="lstbxEdit"/>
 
-            </StackPanel>
-        </ScrollViewer>
     </Grid>
 </Page>
