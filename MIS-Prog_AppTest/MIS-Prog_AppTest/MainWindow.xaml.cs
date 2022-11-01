@@ -30,7 +30,7 @@ namespace MIS_Prog_AppTest
         {
             string eventsFile = File.ReadAllText("CalendarExport.csv");
 
-            using EventManagerDBContext _db = new EventManagerDBContext();
+            EventManagerDBContext _db = new EventManagerDBContext();
 
             InitializeComponent();
             List<string> items = new List<string>();

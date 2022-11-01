@@ -1,14 +1,18 @@
 ﻿<Page x:Class="MIS_Prog_App.Delete"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:MIS_Prog_App"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="Delete">
+      mc:Ignorable="d"
+      d:DesignHeight="450"
+      d:DesignWidth="800"
+      Title="Delete" Background="MintCream">
 
     <Grid>
-        <TextBlock Text ="Delete" HorizontalAlignment ="Center" VerticalAlignment="Center" FontSize="40"/>
+        <WrapPanel Name ="wrappanel">
+
+
+        </WrapPanel>
     </Grid>
 </Page>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,22 @@ namespace MIS_Prog_App
         public Delete()
         {
             InitializeComponent();
+
+            using EventManagerDBContext _db = new EventManagerDBContext();
+            Event[] eves = _db.Events.ToArray<Event>();
+
+
+
+            foreach (var eve in eves)
+            {
+                TextBlock textBlock = new TextBlock();
+
+                textBlock.Text = eve.ToString();
+                textBlock.Background = Brushes.LightGray;
+
+                wrappanel.Children.Add(textBlock);
+            }
+
         }
     }
 }

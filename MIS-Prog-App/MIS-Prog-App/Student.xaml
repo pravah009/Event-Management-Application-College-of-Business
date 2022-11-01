@@ -4,77 +4,104 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MIS_Prog_App"
-        xmlns:fa ="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         mc:Ignorable="d"
-        Height="450" Width="800" WindowStartupLocation="CenterScreen"
+        Height="450"
+        Width="800"
+        WindowStartupLocation="CenterScreen"
         Background="Transparent">
     <Grid>
-        
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
 
-            <!--Left Menu-->
+        <!--Left Menu-->
 
-            <Border x:Name="LeftMenu" >
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
-                        <GradientStop Color="Crimson"/>
-                    </LinearGradientBrush >
-                </Border.Background>
+        <Border x:Name="LeftMenu">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0.5,0"
+                                     EndPoint="0.5,1">
+                    <GradientStop Color="Crimson" />
+                </LinearGradientBrush >
+            </Border.Background>
 
-                <StackPanel>
+            <StackPanel>
 
-                    <!--Title-->
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 35 0 0" Height="55">
+                <!--Title-->
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            Margin="0 35 0 0"
+                            Height="55">
 
-                        <Border Width="200" Height="40">
-                            <Border.Background>
-                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                </LinearGradientBrush >
-                            </Border.Background>
+                    <Border Width="200"
+                            Height="40">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0"
+                                                 EndPoint="1,2">
+                            </LinearGradientBrush >
+                        </Border.Background>
 
-                            <TextBlock Text="Student" Foreground="MintCream" FontSize="30" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Center" Margin="3 0 0 2"/>
+                        <TextBlock Text="Student"
+                                   Foreground="MintCream"
+                                   FontSize="30"
+                                   FontWeight="SemiBold"
+                                   TextAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Margin="3 0 0 2" />
 
-                        </Border>
-
-                    </StackPanel>
-
-                    <Separator Height="0.8" Margin="20 30" Background="MintCream"/>
-
-                    <!--Menu Buttons-->
-
-                    <Button x:Name="BackButton1" Style="{StaticResource menuButton}" Height="43" Click="BackButton1_Click" >
-                        <StackPanel x:Name="Nothing1" Orientation="Horizontal">
-                            <fa:IconImage Icon="Backward" Style="{StaticResource menuButtonIcon}"/>
-                            <TextBlock Text="Back" FontSize="22" Style="{StaticResource menuButtonText}" RenderTransformOrigin="0.624,3.088"/>
-                        </StackPanel>
-                    </Button>
-
-
+                    </Border>
 
                 </StackPanel>
 
-            </Border>
+                <Separator Height="0.8"
+                           Margin="20 30"
+                           Background="MintCream" />
 
-            <!--Main Section-->
+                <!--Menu Buttons-->
 
-            <Border x:Name="MainMenu" Grid.Column="1">
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
-                        <GradientStop Color="MintCream"/>
-                    </LinearGradientBrush >
-                </Border.Background>
-            <ListBox Name="EventsListBox"/>
-            
+                <Button x:Name="BackButton1"
+                        Style="{StaticResource menuButton}"
+                        Height="43"
+                        Click="BackButton1_Click">
+                    <StackPanel x:Name="Nothing1"
+                                Orientation="Horizontal">
+                        <fa:IconImage Icon="Backward"
+                                      Style="{StaticResource menuButtonIcon}" />
+                        <TextBlock Text="Back"
+                                   FontSize="22"
+                                   Style="{StaticResource menuButtonText}"
+                                   RenderTransformOrigin="0.624,3.088" />
+                    </StackPanel>
+                </Button>
+
+
+
+            </StackPanel>
+
         </Border>
-        <RichTextBox x:Name="richie" Grid.Column="1" Margin="25,10,275,274" >
-            
-        </RichTextBox>
-        <Button Margin="187,252,275,114" Grid.Column="1" Click="Button_Click">
-            
-        </Button>
-        </Grid>
+
+        <!--Main Section-->
+
+        <Border x:Name="MainMenu"
+                Grid.Column="1">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0.5,0"
+                                     EndPoint="0.5,1">
+                    <GradientStop Color="MintCream" />
+                </LinearGradientBrush >
+            </Border.Background>
+            <WrapPanel Name="wrappanel">
+
+
+            </WrapPanel>
+
+
+
+        </Border>
+
+
+    </Grid>
 </Window>
