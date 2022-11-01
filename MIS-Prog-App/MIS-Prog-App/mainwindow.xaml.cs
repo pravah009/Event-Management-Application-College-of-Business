@@ -29,7 +29,7 @@ namespace MIS_Prog_App
         {
            
             
-            string eventsFile = File.ReadAllText("CalendarExport.csv");
+            string[] eventsFile = File.ReadAllLines("CalendarExport.csv");
 
             ProgAppContext _db = new ProgAppContext();
 
@@ -37,16 +37,9 @@ namespace MIS_Prog_App
             List<string> items = new List<string>();
 
 
-            for (int j = 0; j < eventsFile.IndexOf('\n'); j++)
+            for (int i = 0; i < eventsFile.Length; i++)
             {
-                items.Add(eventsFile.Substring(j, eventsFile.IndexOf('\n') - 1));
-                j = eventsFile.IndexOf('\n');
-            }
-
-
-            foreach (var item in items)
-            {
-                string[] words = item.Split(',');
+                string[] words = eventsFile[i].Split(',');
                 string eventTitle = words[0];
                 string eventLocation = words[1];
                 string eventStart = words[2];
