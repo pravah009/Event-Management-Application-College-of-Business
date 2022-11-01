@@ -27,27 +27,9 @@ namespace MIS_Prog_App
     {
         public MainWindow()
         {
-           
-            
-            string[] eventsFile = File.ReadAllLines("CalendarExport.csv");
 
-            ProgAppContext _db = new ProgAppContext();
 
             InitializeComponent();
-            List<string> items = new List<string>();
-
-
-            for (int i = 0; i < eventsFile.Length; i++)
-            {
-                string[] words = eventsFile[i].Split(',');
-                string eventTitle = words[0];
-                string eventLocation = words[1];
-                string eventStart = words[2];
-                string eventEnd = words[3];
-                Event eve = new Event(eventTitle, eventLocation, eventStart, eventEnd);
-                _db.Events.Add(eve);
-            }
-            _db.SaveChanges();
 
         }
 

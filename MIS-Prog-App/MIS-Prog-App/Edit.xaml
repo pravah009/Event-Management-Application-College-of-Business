@@ -10,8 +10,10 @@
       Title="Edit" Background="MintCream">
 
     <Grid>
-        <WrapPanel Name="wrappanel">
+        <ScrollViewer>
+            <StackPanel Name="stackpanel" >
 
-        </WrapPanel>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>

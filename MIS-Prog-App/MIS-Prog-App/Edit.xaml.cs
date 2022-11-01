@@ -37,8 +37,9 @@ namespace MIS_Prog_App
 
                 textBlock.Text = eve.ToString();
                 textBlock.Background = Brushes.LightGray;
+                textBlock.Margin = new Thickness(5, 5, 5, 5);
 
-                wrappanel.Children.Add(textBlock);
+                stackpanel.Children.Add(textBlock);
             }
 
         }

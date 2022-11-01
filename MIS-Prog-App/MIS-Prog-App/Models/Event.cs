@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.IO.Packaging;
 
 namespace MIS_Prog_App.Models
 {
@@ -30,6 +31,7 @@ namespace MIS_Prog_App.Models
 
         public override string ToString()
         {
+                        
             return $"{EventTitle}" +
                 $"\n{EventLocation} from {EventStart} to {EventEnd}";
         }

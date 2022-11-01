@@ -93,12 +93,15 @@
                     <GradientStop Color="MintCream" />
                 </LinearGradientBrush >
             </Border.Background>
-            <WrapPanel Name="wrappanel">
 
 
-            </WrapPanel>
+            <ScrollViewer>
+                <StackPanel Name="stackpanel" >
 
+                </StackPanel>
+            </ScrollViewer>
 
+            
 
         </Border>
 

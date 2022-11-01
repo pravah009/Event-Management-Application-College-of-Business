@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MIS_Prog_App.Models;
 
 namespace MIS_Prog_App
 {
@@ -28,15 +29,25 @@ namespace MIS_Prog_App
 
         private void AddSubmit_Click(object sender, RoutedEventArgs e)
         {
-            //using EventManagerDBContext _db = new EventManagerDBContext();
-            //Event[] eves = _db.Events.ToArray<Event>();
-            //string eventTitle = Convert.ToString(this.titleTB.Text);
-            //string eventLocation = Convert.ToString(this.locationTB.Text);
-            //string eventStart = Convert.ToString(this.eventStartTB.Text);
-            //string eventEnd = Convert.ToString(this.eventEndTB.Text);
-            //Event eve = new Event(eventTitle, eventLocation, eventStart, eventEnd);
-            //_db.Events.Add(eve);
-            //_db.SaveChanges();
+
+            
+            using ProgAppContext _db = new ProgAppContext();
+            Event[] eves = _db.Events.ToArray<Event>();
+            string eventTitle = Convert.ToString(this.titleTB.Text);
+            string eventLocation = Convert.ToString(this.locationTB.Text);
+            string eventStart = Convert.ToString(this.eventStartTB.Text);
+            string eventEnd = Convert.ToString(this.eventEndTB.Text);
+            Event eve = new Event(eventTitle, eventLocation, eventStart, eventEnd);
+            _db.Events.Add(eve);
+            _db.SaveChanges();
+
+            titleTB.Clear();
+            locationTB.Clear();
+            eventStartTB.Clear();
+            eventEndTB.Clear();
+
+            MessageBox.Show("The event was succesfully added.");
+            
         }
     }
 }
