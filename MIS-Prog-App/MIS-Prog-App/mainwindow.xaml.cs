@@ -32,10 +32,10 @@ namespace MIS_Prog_App
 
         private void AdminButton_Click(object sender, RoutedEventArgs e)
         {
-            //Window adminWin = new Admin();
-            //adminWin.Show();
-            //this.Close();
-            
+            Window adminWin = new Admin();
+            adminWin.Show();
+            this.Close();
+
         }
 
         private void StudentButton_Click(object sender, RoutedEventArgs e)

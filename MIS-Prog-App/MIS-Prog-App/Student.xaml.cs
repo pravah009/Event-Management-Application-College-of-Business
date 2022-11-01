@@ -13,6 +13,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Microsoft.Extensions.Logging;
+using MIS_Prog_App.Models;
 
 
 namespace MIS_Prog_App
@@ -28,7 +29,7 @@ namespace MIS_Prog_App
 
 
 
-            using EventManagerDBContext _db = new EventManagerDBContext();
+            using ProgAppContext _db = new ProgAppContext();
             Event[] eves = _db.Events.ToArray<Event>();
 
 

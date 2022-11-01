@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using MIS_Prog_App.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace MIS_Prog_App
 {
     /// <summary>
@@ -25,7 +27,7 @@ namespace MIS_Prog_App
         {
             InitializeComponent();
 
-            using EventManagerDBContext _db = new EventManagerDBContext();
+            using ProgAppContext _db = new ProgAppContext();
             Event[] eves = _db.Events.ToArray<Event>();
 
 
