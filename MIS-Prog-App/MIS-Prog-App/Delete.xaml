@@ -11,9 +11,7 @@
 
     <Grid>
         <ScrollViewer>
-            <StackPanel Name="stackpanel" >
-
-            </StackPanel>
+            <ListBox x:Name="deleteListBox" MouseDoubleClick="deleteListBox_MouseDoubleClick"></ListBox>
         </ScrollViewer>
     </Grid>
 </Page>

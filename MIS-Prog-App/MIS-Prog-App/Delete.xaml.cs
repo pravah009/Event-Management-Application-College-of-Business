@@ -32,17 +32,33 @@ namespace MIS_Prog_App
 
 
 
-            foreach (var eve in eves)
+            //foreach (var eve in eves)
+            //{
+            //    TextBlock textBlock = new TextBlock();
+            //
+            //    textBlock.Text = eve.ToString();
+            //    textBlock.Background = Brushes.LightGray;
+            //    textBlock.Margin = new Thickness(5, 5, 5, 5);
+            //
+            //    stackpanel.Children.Add(textBlock);
+            //}
+
+            deleteListBox.ItemsSource = eves;
+
+        }
+
+        private void deleteListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            using ProgAppContext _db = new ProgAppContext();
+
+            if (this.deleteListBox.SelectedIndex != -1)
             {
-                TextBlock textBlock = new TextBlock();
-
-                textBlock.Text = eve.ToString();
-                textBlock.Background = Brushes.LightGray;
-                textBlock.Margin = new Thickness(5, 5, 5, 5);
-
-                stackpanel.Children.Add(textBlock);
+                Event del = (Event)this.deleteListBox.SelectedItem;
+                _db.Events.Remove(del);
+                _db.SaveChanges();
+                deleteListBox.Items.Refresh();
             }
-
+            MessageBox.Show("Success");         
         }
     }
 }

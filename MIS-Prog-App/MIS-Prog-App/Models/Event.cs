@@ -31,9 +31,10 @@ namespace MIS_Prog_App.Models
 
         public override string ToString()
         {
-                        
-            return $"{EventTitle}" +
-                $"\n{EventLocation} from {EventStart} to {EventEnd}";
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            return $"{EventTitle} " +
+                $"\n{EventLocation} from {EventStart} to {EventEnd}\n";
+            Console.ResetColor();
         }
     }
 }
