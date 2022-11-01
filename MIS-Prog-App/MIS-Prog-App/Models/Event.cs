@@ -19,5 +19,19 @@ namespace MIS_Prog_App.Models
         public string EventEnd { get; set; }
 
         public virtual ICollection<Registration> Registrations { get; set; }
+
+        public Event(string eventTitle, string eventLocation, string eventStart, string eventEnd)
+        {
+            EventTitle = eventTitle;
+            EventLocation = eventLocation;
+            EventStart = eventStart;
+            EventEnd = eventEnd;
+        }
+
+        public override string ToString()
+        {
+            return $"{EventTitle}" +
+                $"\n{EventLocation} from {EventStart} to {EventEnd}";
+        }
     }
 }
