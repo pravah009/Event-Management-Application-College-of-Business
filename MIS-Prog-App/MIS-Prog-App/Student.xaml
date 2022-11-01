@@ -93,15 +93,12 @@
                     <GradientStop Color="MintCream" />
                 </LinearGradientBrush >
             </Border.Background>
+            <ListBox Name="lstbx" SelectionChanged="lstbx_SelectionChanged"/>
 
 
-            <ScrollViewer>
-                <StackPanel Name="stackpanel" >
 
-                </StackPanel>
-            </ScrollViewer>
 
-            
+
 
         </Border>
 

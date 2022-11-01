@@ -33,13 +33,8 @@ namespace MIS_Prog_App
 
             foreach (var eve in eves)
             {
-                TextBlock textBlock = new TextBlock();
-
-                textBlock.Text = eve.ToString();
-                textBlock.Background = Brushes.LightGray;
-                textBlock.Margin = new Thickness(5, 5, 5, 5);
-
-                stackpanel.Children.Add(textBlock);
+               
+                lstbxEdit.Items.Add(eve);
             }
 
         }

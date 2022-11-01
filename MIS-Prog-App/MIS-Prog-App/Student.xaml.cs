@@ -36,15 +36,8 @@ namespace MIS_Prog_App
 
             foreach (var eve in eves)
             {
-                
-                TextBlock textBlock = new TextBlock();
 
-                textBlock.Text = eve.ToString();
-                textBlock.Background = Brushes.LightGray;
-                textBlock.Margin = new Thickness(5, 5, 5, 5);
-                
-
-                stackpanel.Children.Add(textBlock);
+                lstbx.Items.Add(eve);
             }
 
 
@@ -58,7 +51,11 @@ namespace MIS_Prog_App
             this.Close();
         }
 
+        public void lstbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Window window = new Registration();
+            window.Show();
 
-
+        }
     }
 }
