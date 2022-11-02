@@ -34,21 +34,21 @@ namespace MIS_Prog_App
 
         private void RegSubmit_Click_1(object sender, RoutedEventArgs e)
         {
-            using ProgAppContext _db = new ProgAppContext();
-            Registration[] regs = _db.Registrations.ToArray<Registration>();
-            string firstN = Convert.ToString(this.RegFN.Text);
-            string lastN = Convert.ToString(this.RegLN.Text);
-            string eM = Convert.ToString(this.RegEmail.Text);
-            int id = displayLB
-            Registration regis = new Registration(firstN, lastN, eM, id);
-            _db.Registrations.Add(regis);
-            _db.SaveChanges();
-
-            RegFN.Clear();
-            RegLN.Clear();
-            RegEmail.Clear();
-
-            MessageBox.Show("Success!");
+            //using ProgAppContext _db = new ProgAppContext();
+            //Registration[] regs = _db.Registrations.ToArray<Registration>();
+            //string firstN = Convert.ToString(this.RegFN.Text);
+            //string lastN = Convert.ToString(this.RegLN.Text);
+            //string eM = Convert.ToString(this.RegEmail.Text);
+            //int id = displayLB
+            //Registration regis = new Registration(firstN, lastN, eM, id);
+            //_db.Registrations.Add(regis);
+            //_db.SaveChanges();
+            //
+            //RegFN.Clear();
+            //RegLN.Clear();
+            //RegEmail.Clear();
+            //
+            //MessageBox.Show("Success!");
         }
     }
 }

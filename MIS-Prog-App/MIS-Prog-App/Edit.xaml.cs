@@ -22,6 +22,7 @@ namespace MIS_Prog_App
     /// </summary>
     public partial class Edit : Page
     {
+        Event test = new Event();
         public Edit()
         {
             InitializeComponent();
@@ -29,14 +30,29 @@ namespace MIS_Prog_App
             using ProgAppContext _db = new ProgAppContext();
             Event[] eves = _db.Events.ToArray<Event>();
 
-
-
-            foreach (var eve in eves)
-            {
-               
-                lstbxEdit.Items.Add(eve);
-            }
-
+            editListBox.ItemsSource = eves;
         }
+
+        private void editListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            test = (Event)this.editListBox.SelectedItem;
+        }
+        private void editButton_Click(object sender, RoutedEventArgs e)
+        {
+            using ProgAppContext _db = new ProgAppContext();
+
+            
+                test.EventTitle = editTitle.Text;
+                test.EventLocation = editLocation.Text;
+                test.EventStart = editStart.Text;
+                test.EventEnd = editEnd.Text;
+                _db.Update(test);
+                _db.SaveChanges();
+                editListBox.Items.Refresh();
+            
+            MessageBox.Show("Success");
+        }
+
+
     }
 }
