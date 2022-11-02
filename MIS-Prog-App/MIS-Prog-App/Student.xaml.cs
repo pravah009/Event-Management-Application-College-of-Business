@@ -29,7 +29,9 @@ namespace MIS_Prog_App
 
 
 
-            using ProgAppContext _db = new ProgAppContext();
+
+
+            ProgAppContext _db = new ProgAppContext();
             Event[] eves = _db.Events.ToArray<Event>();
 
 
@@ -37,10 +39,10 @@ namespace MIS_Prog_App
             foreach (var eve in eves)
             {
 
-                displayLB.Items.Add(eve);
+                lstbxStudent.Items.Add(eve);
             }
 
-    
+
         }
 
         private void BackButton1_Click(object sender, RoutedEventArgs e)
@@ -50,10 +52,39 @@ namespace MIS_Prog_App
             this.Close();
         }
 
-        public void displayLB_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        public void lstbxStudent_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            Window window = new StuReg();
-            window.Show();
+
+            Gridd.Visibility = System.Windows.Visibility.Visible;
+
+
+            //Event currentEvent = lstbxStudent
+        }
+
+        private void RegSubmit_Click(object sender, RoutedEventArgs e)
+        {
+
+            using ProgAppContext _db = new ProgAppContext();
+            Registration[] regs = _db.Registrations.ToArray<Registration>();
+            string firstN = Convert.ToString(this.RegFN.Text);
+            string lastN = Convert.ToString(this.RegLN.Text);
+            string eM = Convert.ToString(this.RegEmail.Text);
+
+            Registration regis = new Registration(firstN, lastN, eM);
+            Event currentEvent = lstbxStudent.SelectedItem as Event;
+            regis.Id = currentEvent.Id;
+            _db.Registrations.Add(regis);
+            _db.SaveChanges();
+
+            RegFN.Clear();
+            RegLN.Clear();
+            RegEmail.Clear();
+
+            MessageBox.Show("Success!");
+
+            Gridd.Visibility = System.Windows.Visibility.Hidden;
+
+
         }
     }
 }

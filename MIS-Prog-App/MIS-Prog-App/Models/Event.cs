@@ -2,8 +2,6 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
-using System.IO.Packaging;
-using System.Windows.Markup;
 
 namespace MIS_Prog_App.Models
 {
@@ -20,22 +18,24 @@ namespace MIS_Prog_App.Models
         public string EventStart { get; set; }
         public string EventEnd { get; set; }
 
-        public virtual ICollection<Registration> Registrations { get; set; }        
+        public virtual ICollection<Registration> Registrations { get; set; }
 
         public Event(string eventTitle, string eventLocation, string eventStart, string eventEnd)
         {
-            this.EventTitle = eventTitle;
-            this.EventLocation = eventLocation;
-            this.EventStart = eventStart;
-            this.EventEnd = eventEnd;
+          
+            EventTitle = eventTitle;
+            EventLocation = eventLocation;
+            EventStart = eventStart;
+            EventEnd = eventEnd;
+           
         }
-
         public override string ToString()
         {
-            
+
             return $"{EventTitle} " +
                 $"\n{EventLocation} from {EventStart} to {EventEnd}\n";
-            
+
         }
     }
+    
 }

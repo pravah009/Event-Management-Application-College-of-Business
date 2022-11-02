@@ -64,8 +64,7 @@ namespace MIS_Prog_App.Models
 
             modelBuilder.Entity<Registration>(entity =>
             {
-                entity.HasKey(e => e.RegId)
-                    .HasName("PK__Registration__04E782156EA5144A");
+                entity.HasKey(e => e.RegId);
 
                 entity.ToTable("Registration");
 
@@ -95,7 +94,7 @@ namespace MIS_Prog_App.Models
                     .WithMany(p => p.Registrations)
                     .HasForeignKey(d => d.Id)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Event.ID");
+                    .HasConstraintName("FK__Registration__ID__68487DD7");
             });
 
             OnModelCreatingPartial(modelBuilder);

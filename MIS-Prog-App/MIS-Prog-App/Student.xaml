@@ -14,7 +14,8 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250" />
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
 
@@ -85,7 +86,7 @@
 
         <!--Main Section-->
 
-        <Border x:Name="MainMenu"
+        <Border x:Name="LBMenu"
                 Grid.Column="1">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0.5,0"
@@ -93,29 +94,95 @@
                     <GradientStop Color="White" />
                 </LinearGradientBrush >
             </Border.Background>
-
             <ScrollViewer>
-                <ListBox Name="displayLB" MouseDoubleClick="displayLB_MouseDoubleClick" Margin="8"
-                         Height="230">
-                <ListBox.ItemContainerStyle>
-                    <Style TargetType="ListBoxItem">
-                        <Setter Property="BorderThickness" Value="0.5" />
-                        <Setter Property="BorderBrush" Value="Black" />
-                        <Setter Property="Background" Value="LightGray"/>
-                    </Style>
-                </ListBox.ItemContainerStyle>
-
+                <ListBox Name="lstbxStudent" Margin="8" MouseDoubleClick="lstbxStudent_MouseDoubleClick">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="BorderThickness" Value="0.5" />
+                            <Setter Property="BorderBrush" Value="Black" />
+                            <Setter Property="Background" Value="LightGray"/>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
                 </ListBox>
-
-                </ScrollViewer>
-
-
-
-
-
-
+            </ScrollViewer>
 
         </Border>
+
+        <Border x:Name="RegMenu" Grid.Column="2" Background="White">
+
+
+            <Grid Visibility="Hidden"
+                  Name="Gridd">
+
+
+
+
+                <TextBlock Height="35"
+                   HorizontalAlignment="Left"
+                   Margin="38,114,0,0"
+                   x:Name="errormessage"
+                   VerticalAlignment="Top"
+                   Width="150"
+                   OpacityMask="Crimson"
+                   Foreground="#FFE5572C"><Run Text="Please enter the following"/><LineBreak/><Run Text=" information to RSVP"/></TextBlock>
+                <TextBlock Height="23"
+                   HorizontalAlignment="Left"
+                   Margin="10,160,0,0"
+                   x:Name="textBlockFirstname"
+                   VerticalAlignment="Top"
+                   Width="110"><Run Text="First Name" /><Run Language="es-es"
+                                                             Text=":" /></TextBlock>
+                <TextBlock Height="23"
+                   HorizontalAlignment="Left"
+                   Margin="10,190,0,0"
+                   x:Name="textBlockLastName"
+                   VerticalAlignment="Top"
+                   Width="110"><Run Language="es-es"
+                                    Text="Last Name:" /></TextBlock>
+                <TextBlock Height="23"
+                   HorizontalAlignment="Left"
+                   Margin="10,221,0,0"
+                   x:Name="textBlockEmailId"
+                   VerticalAlignment="Top"
+                   Width="110"><Run Language="es-es"
+                                    Text="Email:" /></TextBlock>
+                <TextBox Height="23"
+                 HorizontalAlignment="Left"
+                 Margin="80,161,0,0"
+                 x:Name="RegFN"
+                 VerticalAlignment="Top"
+                 Width="108" />
+                <TextBox Height="23"
+                 HorizontalAlignment="Left"
+                 Margin="80,191,0,0"
+                 x:Name="RegLN"
+                 VerticalAlignment="Top"
+                 Width="108" />
+                <TextBox Height="23"
+                 HorizontalAlignment="Left"
+                 Margin="80,221,0,0"
+                 x:Name="RegEmail"
+                 VerticalAlignment="Top"
+                 Width="108" />
+                <Button Content="Submit"
+                Height="23"
+                HorizontalAlignment="Left"
+                Margin="70,263,0,0"
+                x:Name="RegSubmit"
+                VerticalAlignment="Top"
+                Width="70" Click="RegSubmit_Click"
+                 />
+
+            </Grid>
+
+        </Border>
+
+
+
+
+
+
+
 
 
     </Grid>
