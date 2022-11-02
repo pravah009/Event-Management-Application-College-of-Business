@@ -27,8 +27,12 @@ namespace MIS_Prog_App
         {
             InitializeComponent();
 
-            using ProgAppContext _db = new ProgAppContext();
+
+
+            ProgAppContext _db = new ProgAppContext();
             Event[] eves = _db.Events.ToArray<Event>();
+
+
 
             editListBox.ItemsSource = eves;
         }
@@ -36,6 +40,9 @@ namespace MIS_Prog_App
         private void editListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             test = (Event)this.editListBox.SelectedItem;
+
+            Gridd2.Visibility = System.Windows.Visibility.Visible;
+
         }
         private void editButton_Click(object sender, RoutedEventArgs e)
         {
@@ -51,6 +58,8 @@ namespace MIS_Prog_App
                 editListBox.Items.Refresh();
             
             MessageBox.Show("Success");
+
+            Gridd2.Visibility = System.Windows.Visibility.Hidden;
         }
 
 

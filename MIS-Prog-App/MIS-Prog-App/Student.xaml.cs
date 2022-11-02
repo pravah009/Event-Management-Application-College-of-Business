@@ -57,8 +57,7 @@ namespace MIS_Prog_App
 
             Gridd.Visibility = System.Windows.Visibility.Visible;
 
-
-            //Event currentEvent = lstbxStudent
+       
         }
 
         private void RegSubmit_Click(object sender, RoutedEventArgs e)
