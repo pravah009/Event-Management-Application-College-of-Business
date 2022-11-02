@@ -29,7 +29,7 @@
             <TextBox Height="23" HorizontalAlignment="Left" Margin="183,80,0,0" x:Name="locationTB" VerticalAlignment="Top" Width="222" />
             <TextBox Height="23" HorizontalAlignment="Left" Margin="184,124,0,0" x:Name="eventStartTB" VerticalAlignment="Top" Width="222" />
             <TextBox Height="23" HorizontalAlignment="Left" Margin="183,166,0,0" x:Name="eventEndTB" VerticalAlignment="Top" Width="222" />
-            <Button Content="Submit" Height="23" HorizontalAlignment="Center" Margin="0,220,0,0" x:Name="AddSubmit" VerticalAlignment="Top" Width="70" Click="AddSubmit_Click" FontSize="15" FontWeight="Bold" />
+            <Button Content="Submit" Height="23" HorizontalAlignment="Center" Margin="0,220,0,0" x:Name="AddSubmit" VerticalAlignment="Top" Width="70" Click="AddSubmit_Click" FontSize="15" FontWeight="Bold" Background="Crimson" Foreground="MintCream" />
 
         </Grid>
         <Label Content="Fill-in the following event information:" HorizontalAlignment="Left" Margin="152,15,0,0" VerticalAlignment="Top" Width="231" FontWeight="Bold" Background="White" Height="26"/>

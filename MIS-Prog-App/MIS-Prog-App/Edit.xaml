@@ -38,7 +38,7 @@
                 <TextBox Height="23" HorizontalAlignment="Left" Margin="83,105,0,0" x:Name="editLocation" VerticalAlignment="Top" Width="82" />
                 <TextBox Height="23" HorizontalAlignment="Left" Margin="84,150,0,0" x:Name="editStart" VerticalAlignment="Top" Width="81" />
                 <TextBox Height="23" HorizontalAlignment="Left" Margin="83,191,0,0" x:Name="editEnd" VerticalAlignment="Top" Width="82" />
-                <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="50,246,0,0" x:Name="editButton" VerticalAlignment="Top" Width="70" Click="editButton_Click" FontWeight="Bold" />
+                <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="50,246,0,0" x:Name="editButton" VerticalAlignment="Top" Width="70" Click="editButton_Click" FontWeight="Bold" Background="Crimson" Foreground="MintCream" />
 
             </Grid>
 
