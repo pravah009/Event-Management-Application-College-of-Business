@@ -11,16 +11,48 @@
 
     <Grid>
         <ScrollViewer>
-            <ListBox Name="lstbxEdit" Margin="8">
+        <ListBox Name="editListBox"
+                 Margin="8,10,8,195"
+                 MouseDoubleClick="editListBox_MouseDoubleClick"
+                     Height="245">
                 <ListBox.ItemContainerStyle>
                     <Style TargetType="ListBoxItem">
-                        <Setter Property="BorderThickness" Value="0.5" />
-                        <Setter Property="BorderBrush" Value="Black" />
-                        <Setter Property="Background" Value="LightGray"/>
+                        <Setter Property="BorderThickness"
+                                Value="0.5" />
+                        <Setter Property="BorderBrush"
+                                Value="Black" />
+                        <Setter Property="Background"
+                                Value="LightGray" />
                     </Style>
                 </ListBox.ItemContainerStyle>
             </ListBox>
         </ScrollViewer>
-
+        <TextBox Name="editTitle" Margin="380,271,120,144"
+                 Visibility="Visible"></TextBox>
+        <TextBox Name="editLocation" Margin="380,311,120,104"
+                 Visibility="Visible"></TextBox>
+        <TextBox Name="editStart" Margin="380,351,120,64"
+                 Visibility="Visible"></TextBox>
+        <TextBox Name="editEnd" Margin="380,391,120,24"
+                 Visibility="Visible"></TextBox>
+        <Label Name ="changeTitle" Content="Change title:" Margin="150,271,500,144"
+               FontSize="16"
+               Visibility="Visible"></Label>
+        <Label Name="changeLocation"
+               Content="Change location:"
+               Margin="150,311,500,104"
+               FontSize="16"
+               Visibility="Visible"></Label>
+        <Label Name="changeStart"
+               Content="Change start:"
+               Margin="150,351,500,64"
+               FontSize="16"
+               Visibility="Visible"></Label>
+        <Label Name="changeEnd"
+               Content="Change end:"
+               Margin="150,391,500,24"
+               FontSize="16"
+               Visibility="Visible"></Label>
+        <Button Margin="25,391,700,24" Content="Edit" Name="editButton" Click="editButton_Click"></Button>
     </Grid>
 </Page>
