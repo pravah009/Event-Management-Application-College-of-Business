@@ -95,7 +95,8 @@
             </Border.Background>
 
             <ScrollViewer>
-                <ListBox Name="lstbx" SelectionChanged="lstbx_SelectionChanged" Margin="8">
+                <ListBox Name="displayLB" MouseDoubleClick="displayLB_MouseDoubleClick" Margin="8"
+                         Height="230">
                 <ListBox.ItemContainerStyle>
                     <Style TargetType="ListBoxItem">
                         <Setter Property="BorderThickness" Value="0.5" />

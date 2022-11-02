@@ -37,7 +37,7 @@ namespace MIS_Prog_App
             foreach (var eve in eves)
             {
 
-                lstbx.Items.Add(eve);
+                displayLB.Items.Add(eve);
             }
 
     
@@ -50,11 +50,10 @@ namespace MIS_Prog_App
             this.Close();
         }
 
-        public void lstbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        public void displayLB_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            Window window = new Registration();
+            Window window = new StuReg();
             window.Show();
-
         }
     }
 }
