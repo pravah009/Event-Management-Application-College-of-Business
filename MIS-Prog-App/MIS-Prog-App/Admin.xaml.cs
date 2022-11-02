@@ -27,16 +27,30 @@ namespace MIS_Prog_App
         private void AddButton1_Click(object sender, RoutedEventArgs e)
         {
             Main.Content = new Add();
+           
+            AddButton1.Background = new SolidColorBrush(Colors.White);
+            DeleteButton1.Background = new SolidColorBrush(Colors.Transparent);
+            EditButton1.Background = new SolidColorBrush(Colors.Transparent);
+            AddButton1.Foreground = new SolidColorBrush(Colors.LightBlue);
+
         }
 
         private void DeleteButton1_Click(object sender, RoutedEventArgs e)
         {
             Main.Content = new Delete();
+            DeleteButton1.Background = new SolidColorBrush(Colors.White);
+            EditButton1.Background = new SolidColorBrush(Colors.Transparent);
+            AddButton1.Background = new SolidColorBrush(Colors.Transparent);
+            DeleteButton1.Foreground = new SolidColorBrush(Colors.LightBlue);
         }
 
         private void EditButton1_Click(object sender, RoutedEventArgs e)
         {
             Main.Content = new Edit();
+            EditButton1.Background = new SolidColorBrush(Colors.White);
+            DeleteButton1.Background = new SolidColorBrush(Colors.Transparent);
+            AddButton1.Background = new SolidColorBrush(Colors.Transparent);
+           EditButton1.Foreground = new SolidColorBrush(Colors.LightBlue);
         }
 
         private void BackButton1_Click(object sender, RoutedEventArgs e)
