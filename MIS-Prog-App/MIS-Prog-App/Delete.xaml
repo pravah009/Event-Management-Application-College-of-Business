@@ -7,11 +7,23 @@
       mc:Ignorable="d"
       d:DesignHeight="450"
       d:DesignWidth="800"
-      Title="Delete" Background="MintCream">
+      Title="Delete" Background="White">
 
     <Grid>
         <ScrollViewer>
-            <ListBox x:Name="deleteListBox" MouseDoubleClick="deleteListBox_MouseDoubleClick"></ListBox>
+            <ListBox Name="deleteListBox" MouseDoubleClick="deleteListBox_MouseDoubleClick" Margin="8">
+
+                
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="BorderThickness" Value="0.5" />
+                            <Setter Property="BorderBrush" Value="Black" />
+                            <Setter Property="Background" Value="LightGray"/>
+
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+            </ListBox>
+            
         </ScrollViewer>
     </Grid>
 </Page>

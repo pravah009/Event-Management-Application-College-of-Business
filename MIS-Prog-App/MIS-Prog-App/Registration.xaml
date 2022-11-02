@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MIS_Prog_App"
         mc:Ignorable="d"
-        Height="440" Width="400" Background="MintCream" WindowStartupLocation="CenterScreen">
+        Height="440" Width="400" Background="White" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,210,0,99">
 
 

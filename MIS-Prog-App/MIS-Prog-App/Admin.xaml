@@ -36,13 +36,13 @@
                             </LinearGradientBrush >
                         </Border.Background>
 
-                        <TextBlock Text="Administrator" Foreground="MintCream" FontSize="30" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Center" Margin="3 0 0 2"/>
+                        <TextBlock Text="Administrator" Foreground="White" FontSize="30" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Center" Margin="3 0 0 2"/>
 
                     </Border>
 
                 </StackPanel>
 
-                <Separator Height="0.8" Margin="20 30" Background="MintCream"/>
+                <Separator Height="0.8" Margin="20 30" Background="White"/>
                 
                 <!--Menu Buttons-->
                 <Button x:Name="AddButton1" Style="{StaticResource menuButton}" Click="AddButton1_Click" >
@@ -83,7 +83,7 @@
         <Border x:Name="MainMenu" Grid.Column="1">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
-                    <GradientStop Color="MintCream"/>
+                    <GradientStop Color="White"/>
                 </LinearGradientBrush >
             </Border.Background>
             <Frame x:Name ="Main" NavigationUIVisibility="Hidden"/>

@@ -7,10 +7,20 @@
       mc:Ignorable="d"
       d:DesignHeight="450"
       d:DesignWidth="800"
-      Title="Edit" Background="MintCream">
+      Title="Edit" Background="White">
 
     <Grid>
-        <ListBox Name="lstbxEdit"/>
+        <ScrollViewer>
+            <ListBox Name="lstbxEdit" Margin="8">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="BorderThickness" Value="0.5" />
+                        <Setter Property="BorderBrush" Value="Black" />
+                        <Setter Property="Background" Value="LightGray"/>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+            </ListBox>
+        </ScrollViewer>
 
     </Grid>
 </Page>

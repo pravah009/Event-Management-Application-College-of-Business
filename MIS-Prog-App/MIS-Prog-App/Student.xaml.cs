@@ -40,8 +40,7 @@ namespace MIS_Prog_App
                 lstbx.Items.Add(eve);
             }
 
-
-
+    
         }
 
         private void BackButton1_Click(object sender, RoutedEventArgs e)

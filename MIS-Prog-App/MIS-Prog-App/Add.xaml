@@ -13,7 +13,7 @@
           Height="350" Width="525" Background="Crimson">
         <!--Button as a Link button using style-->
 
-        <Grid Margin="30,0,30,0" Background="MintCream" Height="264" VerticalAlignment="Center">
+        <Grid Margin="30,0,30,0" Background="White" Height="264" VerticalAlignment="Center">
             <Grid.RowDefinitions>
                 <RowDefinition Height="252*" />
 
