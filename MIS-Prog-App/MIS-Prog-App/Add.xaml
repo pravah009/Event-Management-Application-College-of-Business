@@ -13,24 +13,25 @@
           Height="350" Width="525" Background="Crimson">
         <!--Button as a Link button using style-->
 
-        <Grid Margin="30,0,30,0" Background="White" Height="264" VerticalAlignment="Center">
+        <Grid Margin="30,55,30,0" Background="White" Height="264" VerticalAlignment="Top">
             <Grid.RowDefinitions>
                 <RowDefinition Height="252*" />
 
             </Grid.RowDefinitions>
 
-            
+
             <TextBlock Height="20" HorizontalAlignment="Left" Margin="67,0,0,0" x:Name ="errormessage" VerticalAlignment="Top" Width="247"  OpacityMask="Crimson" Foreground="MintCream" />
-            <TextBlock Height="23" HorizontalAlignment="Left" Margin="35,38,0,0" x:Name="textBlockFirstname" VerticalAlignment="Top" Width="110" FontSize="20" ><Run Text="Event Title"/><Run Language="es-es" Text=":"/></TextBlock>
-            <TextBlock Height="23" HorizontalAlignment="Left" Margin="35,82,0,0" Name="textBlockLastName" Text="Location:" VerticalAlignment="Top" Width="110" FontSize="20" />
-            <TextBlock Height="22" HorizontalAlignment="Left" Margin="35,125,0,0" x:Name="textBlockEmailId" VerticalAlignment="Top" Width="110" FontSize="20" ><Run Text="Start Time"/><Run Language="es-es" Text=":"/></TextBlock>
-            <TextBlock Height="24" HorizontalAlignment="Left" Margin="35,166,0,0" x:Name="textBlockAddress" VerticalAlignment="Top" Width="110" FontSize="20" ><Run Text="End Time"/><Run Language="es-es" Text=":"/></TextBlock>
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="57,38,0,0" x:Name="textBlockFirstname" VerticalAlignment="Top" Width="110" FontSize="15" FontWeight="Bold" ><Run Text="Event Title"/><Run Language="es-es" Text=":"/></TextBlock>
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="57,82,0,0" Name="textBlockLastName" Text="Location:" VerticalAlignment="Top" Width="110" FontSize="15" FontWeight="Bold" />
+            <TextBlock Height="22" HorizontalAlignment="Left" Margin="57,125,0,0" x:Name="textBlockEmailId" VerticalAlignment="Top" Width="110" FontSize="15" FontWeight="Bold" ><Run Text="Start Time"/><Run Language="es-es" Text=":"/></TextBlock>
+            <TextBlock Height="24" HorizontalAlignment="Left" Margin="57,166,0,0" x:Name="textBlockAddress" VerticalAlignment="Top" Width="110" FontSize="15" FontWeight="Bold" ><Run Text="End Time"/><Run Language="es-es" Text=":"/></TextBlock>
             <TextBox Height="23" HorizontalAlignment="Left" Margin="183,37,0,0" x:Name="titleTB" VerticalAlignment="Top" Width="222" />
             <TextBox Height="23" HorizontalAlignment="Left" Margin="183,80,0,0" x:Name="locationTB" VerticalAlignment="Top" Width="222" />
             <TextBox Height="23" HorizontalAlignment="Left" Margin="184,124,0,0" x:Name="eventStartTB" VerticalAlignment="Top" Width="222" />
             <TextBox Height="23" HorizontalAlignment="Left" Margin="183,166,0,0" x:Name="eventEndTB" VerticalAlignment="Top" Width="222" />
-            <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="195,220,0,0" x:Name="AddSubmit" VerticalAlignment="Top" Width="70" Click="AddSubmit_Click" />
+            <Button Content="Submit" Height="23" HorizontalAlignment="Center" Margin="0,220,0,0" x:Name="AddSubmit" VerticalAlignment="Top" Width="70" Click="AddSubmit_Click" FontSize="15" FontWeight="Bold" />
 
         </Grid>
+        <Label Content="Fill-in the following event information:" HorizontalAlignment="Left" Margin="152,15,0,0" VerticalAlignment="Top" Width="231" FontWeight="Bold" Background="White" Height="26"/>
     </Grid>
 </Page>

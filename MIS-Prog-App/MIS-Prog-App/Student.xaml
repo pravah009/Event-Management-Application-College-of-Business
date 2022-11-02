@@ -94,7 +94,7 @@
                     <GradientStop Color="White" />
                 </LinearGradientBrush >
             </Border.Background>
-            <ScrollViewer>
+            
                 <ListBox Name="lstbxStudent" Margin="8" MouseDoubleClick="lstbxStudent_MouseDoubleClick">
                     <ListBox.ItemContainerStyle>
                         <Style TargetType="ListBoxItem">
@@ -104,7 +104,7 @@
                         </Style>
                     </ListBox.ItemContainerStyle>
                 </ListBox>
-            </ScrollViewer>
+            
 
         </Border>
 

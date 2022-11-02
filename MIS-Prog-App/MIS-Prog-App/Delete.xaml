@@ -10,20 +10,21 @@
       Title="Delete" Background="White">
 
     <Grid>
-        <ScrollViewer>
-            <ListBox Name="deleteListBox" MouseDoubleClick="deleteListBox_MouseDoubleClick" Margin="8">
 
-                
-                    <ListBox.ItemContainerStyle>
-                        <Style TargetType="ListBoxItem">
-                            <Setter Property="BorderThickness" Value="0.5" />
-                            <Setter Property="BorderBrush" Value="Black" />
-                            <Setter Property="Background" Value="LightGray"/>
+        <ListBox Name="deleteListBox" MouseDoubleClick="deleteListBox_MouseDoubleClick" Margin="8,57,10,30">
 
-                        </Style>
-                    </ListBox.ItemContainerStyle>
-            </ListBox>
-            
-        </ScrollViewer>
+
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="BorderThickness" Value="0.5" />
+                    <Setter Property="BorderBrush" Value="Black" />
+                    <Setter Property="Background" Value="LightGray"/>
+
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
+
+
+        <Label Content="Double click the event you would like to delete :" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="290" FontWeight="Bold"/>
     </Grid>
 </Page>

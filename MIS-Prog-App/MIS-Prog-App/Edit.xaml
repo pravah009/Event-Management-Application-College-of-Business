@@ -15,57 +15,45 @@
 
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="400" />
-            <ColumnDefinition Width="400" />
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="250" />
 
         </Grid.ColumnDefinitions>
 
-        <Border x:Name="border1"
-                Grid.Column="2">
-            <Border.Background>
-                <LinearGradientBrush StartPoint="0.5,0"
-                                     EndPoint="0.5,1">
-                    <GradientStop Color="White" />
-                </LinearGradientBrush >
-            </Border.Background>
-            <ScrollViewer>
-                <ListBox Name="editListBox" Margin="8" MouseDoubleClick="editListBox_MouseDoubleClick" Height="336" Width="321">
-                    <ListBox.ItemContainerStyle>
-                        <Style TargetType="ListBoxItem">
-                            <Setter Property="BorderThickness" Value="0.5" />
-                            <Setter Property="BorderBrush" Value="Black" />
-                            <Setter Property="Background" Value="LightGray"/>
-                        </Style>
-                    </ListBox.ItemContainerStyle>
-                </ListBox>
-            </ScrollViewer>
-
-        </Border>
-
-        <Border x:Name="editmenu" Background="White" Margin="-5,10,5,-10">
 
 
-            <Grid Visibility="Visible"
+        <Border x:Name="editmenu" Background="White" Margin="40,46,-30,65" Grid.Column="1">
+
+
+            <Grid Visibility="Hidden"
                   Name="Gridd2"
-                  Grid.Column="1">
+                  Grid.Column="1"
+                  >
 
-
-
-
-
-                <TextBlock Height="23" HorizontalAlignment="Left" Margin="35,38,0,0" x:Name="changeTitle" VerticalAlignment="Top" Width="110" FontSize="20" ><Run Text="Event Title"/><Run Language="es-es" Text=":"/></TextBlock>
-                <TextBlock Height="23" HorizontalAlignment="Left" Margin="35,82,0,0" Name="changeLocation" Text="Location:" VerticalAlignment="Top" Width="110" FontSize="20" />
-                <TextBlock Height="22" HorizontalAlignment="Left" Margin="35,125,0,0" x:Name="changeStart" VerticalAlignment="Top" Width="110" FontSize="20" ><Run Text="Start Time"/><Run Language="es-es" Text=":"/></TextBlock>
-                <TextBlock Height="24" HorizontalAlignment="Left" Margin="35,166,0,0" x:Name="changeEnd" VerticalAlignment="Top" Width="110" FontSize="20" ><Run Text="End Time"/><Run Language="es-es" Text=":"/></TextBlock>
-                <TextBox Height="23" HorizontalAlignment="Left" Margin="183,37,0,0" x:Name="editTitle" VerticalAlignment="Top" Width="187" />
-                <TextBox Height="23" HorizontalAlignment="Left" Margin="183,80,0,0" x:Name="editLocation" VerticalAlignment="Top" Width="187" />
-                <TextBox Height="23" HorizontalAlignment="Left" Margin="184,124,0,0" x:Name="editStart" VerticalAlignment="Top" Width="186" />
-                <TextBox Height="23" HorizontalAlignment="Left" Margin="183,166,0,0" x:Name="editEnd" VerticalAlignment="Top" Width="187" />
-                <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="195,220,0,0" x:Name="editButton" VerticalAlignment="Top" Width="70" Click="editButton_Click" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="15,63,0,0" x:Name="changeTitle" VerticalAlignment="Top" Width="60" FontWeight="Bold" ><Run Text="Event Title"/><Run Language="es-es" Text=":"/></TextBlock>
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="15,107,0,0" Name="changeLocation" Text="Location:" VerticalAlignment="Top" Width="60" FontWeight="Bold" />
+                <TextBlock Height="22" HorizontalAlignment="Left" Margin="15,151,0,0" x:Name="changeStart" VerticalAlignment="Top" Width="60" FontWeight="Bold" ><Run Text="Start Time"/><Run Language="es-es" Text=":"/></TextBlock>
+                <TextBlock Height="24" HorizontalAlignment="Left" Margin="15,191,0,0" x:Name="changeEnd" VerticalAlignment="Top" Width="60" FontWeight="Bold" ><Run Text="End Time"/><Run Language="es-es" Text=":"/></TextBlock>
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="83,62,0,0" x:Name="editTitle" VerticalAlignment="Top" Width="82" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="83,105,0,0" x:Name="editLocation" VerticalAlignment="Top" Width="82" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="84,150,0,0" x:Name="editStart" VerticalAlignment="Top" Width="81" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="83,191,0,0" x:Name="editEnd" VerticalAlignment="Top" Width="82" />
+                <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="50,246,0,0" x:Name="editButton" VerticalAlignment="Top" Width="70" Click="editButton_Click" FontWeight="Bold" />
 
             </Grid>
 
         </Border>
+
+        <ListBox x:Name="editListBox" MouseDoubleClick="editListBox_MouseDoubleClick" Margin="15,0,215,0" Grid.ColumnSpan="2" Height="378" VerticalAlignment="Center">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="{x:Type ListBoxItem}">
+                    <Setter Property="BorderThickness" Value="0.5" />
+                    <Setter Property="BorderBrush" Value="Black" />
+                    <Setter Property="Background" Value="LightGray"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
+        <Label Content="Double-click the event you would like to edit : " HorizontalAlignment="Left" Margin="45,-7,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="290" FontWeight="Bold"/>
 
 
     </Grid>
