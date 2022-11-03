@@ -1,5 +1,4 @@
 - Adjust structure for fullscreen
 - Add our names somewhere
-- listbox layouts
 - Show only events happening from now on
 - Admin page at the very beginning show something	
