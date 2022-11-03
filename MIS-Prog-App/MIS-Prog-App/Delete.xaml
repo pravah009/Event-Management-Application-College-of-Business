@@ -7,7 +7,7 @@
       mc:Ignorable="d"
       d:DesignHeight="450"
       d:DesignWidth="800"
-      Title="Delete" Background="White">
+      Title="Delete" Background="#FDF9D8">
 
     <Grid Background="#FDF9D8">
 
@@ -21,7 +21,7 @@
                 <Style TargetType="ListBoxItem">
                     <Setter Property="BorderThickness" Value="0.5" />
                     <Setter Property="BorderBrush" Value="Black" />
-                    <Setter Property="Background" Value="LightGray"/>
+                    <Setter Property="Background" Value="#FDF9D8"/>
 
                 </Style>
             </ListBox.ItemContainerStyle>

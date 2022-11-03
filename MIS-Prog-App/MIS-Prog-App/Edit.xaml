@@ -49,14 +49,14 @@
                  MouseDoubleClick="editListBox_MouseDoubleClick"
                  Margin="15,0,215,0"
                  Grid.ColumnSpan="2"
-                 Height="378"
+                 Height="330"
                  VerticalAlignment="Center"
                  Background="#FDF9D8">
             <ListBox.ItemContainerStyle>
                 <Style TargetType="{x:Type ListBoxItem}">
                     <Setter Property="BorderThickness" Value="0.5" />
                     <Setter Property="BorderBrush" Value="Black" />
-                    <Setter Property="Background" Value="LightGray"/>
+                    <Setter Property="Background" Value="#FDF9D8"/>
                 </Style>
             </ListBox.ItemContainerStyle>
         </ListBox>

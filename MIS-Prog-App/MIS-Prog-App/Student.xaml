@@ -9,7 +9,7 @@
         Height="450"
         Width="800"
         WindowStartupLocation="CenterScreen"
-        Background="Transparent">
+        Background="#FDF9D8">
     <Grid>
 
         <Grid.ColumnDefinitions>
@@ -59,7 +59,7 @@
 
                 <Separator Height="0.8"
                            Margin="20 30"
-                           Background="White" />
+                           Background="#FDF9D8" />
 
                 <!--Menu Buttons-->
 
@@ -92,7 +92,7 @@
             <Border.Background>
                 <LinearGradientBrush StartPoint="0.5,0"
                                      EndPoint="0.5,1">
-                    <GradientStop Color="White" />
+                    <GradientStop Color="#FDF9D8" />
                 </LinearGradientBrush >
             </Border.Background>
 
@@ -100,15 +100,15 @@
                      Margin="8"
                      MouseDoubleClick="lstbxStudent_MouseDoubleClick"
                      Background="#FDF9D8">
-                    <ListBox.ItemContainerStyle>
-                        <Style TargetType="ListBoxItem">
-                            <Setter Property="BorderThickness" Value="0.5" />
-                            <Setter Property="BorderBrush" Value="Black" />
-                            <Setter Property="Background" Value="LightGray"/>
-                        </Style>
-                    </ListBox.ItemContainerStyle>
-                </ListBox>
-            
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="BorderThickness" Value="0.5" />
+                        <Setter Property="BorderBrush" Value="Black" />
+                        <Setter Property="Background" Value="#FDF9D8"/>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+            </ListBox>
+
 
         </Border>
 
