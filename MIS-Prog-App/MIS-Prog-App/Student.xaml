@@ -46,7 +46,7 @@
                         </Border.Background>
 
                         <TextBlock Text="Student"
-                                   Foreground="White"
+                                   Foreground="#FDF9D8"
                                    FontSize="30"
                                    FontWeight="SemiBold"
                                    TextAlignment="Center"
@@ -70,11 +70,12 @@
                     <StackPanel x:Name="Nothing1"
                                 Orientation="Horizontal">
                         <fa:IconImage Icon="Backward"
-                                      Style="{StaticResource menuButtonIcon}" />
+                                      Style="{StaticResource menuButtonIcon}"
+                                      Foreground="Black"/>
                         <TextBlock Text="Back"
-                                   FontSize="22"
+                                   FontSize="24"
                                    Style="{StaticResource menuButtonText}"
-                                   RenderTransformOrigin="0.624,3.088" />
+                                   RenderTransformOrigin="0.624,3.088" Foreground="#FDF9D8" />
                     </StackPanel>
                 </Button>
 
@@ -94,8 +95,11 @@
                     <GradientStop Color="White" />
                 </LinearGradientBrush >
             </Border.Background>
-            
-                <ListBox Name="lstbxStudent" Margin="8" MouseDoubleClick="lstbxStudent_MouseDoubleClick">
+
+            <ListBox Name="lstbxStudent"
+                     Margin="8"
+                     MouseDoubleClick="lstbxStudent_MouseDoubleClick"
+                     Background="#FDF9D8">
                     <ListBox.ItemContainerStyle>
                         <Style TargetType="ListBoxItem">
                             <Setter Property="BorderThickness" Value="0.5" />
@@ -108,7 +112,9 @@
 
         </Border>
 
-        <Border x:Name="RegMenu" Grid.Column="2" Background="White">
+        <Border x:Name="RegMenu"
+                Grid.Column="2"
+                Background="#FDF9D8">
 
 
             <Grid Visibility="Hidden"
@@ -123,8 +129,8 @@
                    x:Name="errormessage"
                    VerticalAlignment="Top"
                    Width="150"
-                   OpacityMask="Crimson"
-                   Foreground="#FFE5572C"><Run Text="Please enter the following"/><LineBreak/><Run Text=" information to RSVP"/></TextBlock>
+                           OpacityMask="#841617"
+                           Foreground="#841617"><Run Text="Please enter the following"/><LineBreak/><Run Text=" information to RSVP"/></TextBlock>
                 <TextBlock Height="23"
                    HorizontalAlignment="Left"
                    Margin="10,160,0,0"
@@ -171,7 +177,8 @@
                 x:Name="RegSubmit"
                 VerticalAlignment="Top"
                 Width="70" Click="RegSubmit_Click"
-                 Background="Crimson" Foreground="MintCream"/>
+                        Background="#841617"
+                        Foreground="#FDF9D8"/>
 
             </Grid>
 

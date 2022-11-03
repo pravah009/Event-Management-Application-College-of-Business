@@ -11,7 +11,7 @@
 
 
 
-    <Grid>
+    <Grid Background="#FDF9D8">
 
 
         <Grid.ColumnDefinitions>
@@ -22,7 +22,8 @@
 
 
 
-        <Border x:Name="editmenu" Background="White" Margin="40,46,-30,65" Grid.Column="1">
+        <Border x:Name="editmenu"
+                Background="#FDF9D8" Margin="40,46,-30,65" Grid.Column="1">
 
 
             <Grid Visibility="Hidden"
@@ -44,7 +45,13 @@
 
         </Border>
 
-        <ListBox x:Name="editListBox" MouseDoubleClick="editListBox_MouseDoubleClick" Margin="15,0,215,0" Grid.ColumnSpan="2" Height="378" VerticalAlignment="Center">
+        <ListBox x:Name="editListBox"
+                 MouseDoubleClick="editListBox_MouseDoubleClick"
+                 Margin="15,0,215,0"
+                 Grid.ColumnSpan="2"
+                 Height="378"
+                 VerticalAlignment="Center"
+                 Background="#FDF9D8">
             <ListBox.ItemContainerStyle>
                 <Style TargetType="{x:Type ListBoxItem}">
                     <Setter Property="BorderThickness" Value="0.5" />
@@ -53,7 +60,10 @@
                 </Style>
             </ListBox.ItemContainerStyle>
         </ListBox>
-        <Label Content="Double-click the event you would like to edit : " HorizontalAlignment="Left" Margin="45,-7,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="290" FontWeight="Bold"/>
+        <Label Content="Double-click the event you would like to edit : " HorizontalAlignment="Left"
+               Margin="30,5,0,0"
+               VerticalAlignment="Top" Grid.ColumnSpan="2" Width="290" FontWeight="Bold"
+               FontSize="13" />
 
 
     </Grid>

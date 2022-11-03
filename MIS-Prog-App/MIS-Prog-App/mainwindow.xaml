@@ -8,23 +8,38 @@
         mc:Ignorable="d"
         Height="450"
         Width="800"
-        Background="Crimson"
+        Background="#FDF9D8"
         WindowStartupLocation="CenterScreen">
 
     <Grid>
         <!--Menu Buttons-->
         <Button x:Name="AdminButton" Style="{StaticResource menuButton}"  HorizontalAlignment="Center" Margin="0,132,0,240" Width="800" Click="AdminButton_Click" >
             <StackPanel x:Name="Nothing" Orientation="Horizontal" Margin="300,0,0,0" HorizontalAlignment="Left" Width="340">
-                <fa:IconImage Icon="Pencil" Style="{StaticResource menuButtonIcon}"/>
-                <TextBlock FontSize="32" Style="{StaticResource menuButtonText}" Text="Admin" Height="47"/>
+                <fa:IconImage Icon="Pencil"
+                              Style="{StaticResource menuButtonIcon}"
+                              Foreground="Black"
+                              Width="26"
+                              Height="26" />
+                <TextBlock FontSize="36"
+                           Style="{StaticResource menuButtonText}"
+                           Text="Admin"
+                           Height="47"
+                           Foreground="#841617"/>
             </StackPanel>
         </Button>
 
 
         <Button x:Name="StudentButton" Style="{StaticResource menuButton}" HorizontalAlignment="Center" Margin="0,234,0,115" Width="800" Click="StudentButton_Click">
             <StackPanel x:Name="DeleteButton" Orientation="Horizontal" Margin="295,0,271,0">
-                <fa:IconImage Icon="Book" Style="{StaticResource menuButtonIcon}"/>
-                <TextBlock FontSize="32" Style="{StaticResource menuButtonText}"><Run Language="es-es" Text="Student"/></TextBlock>
+                <fa:IconImage Icon="Book"
+                              Style="{StaticResource menuButtonIcon}"
+                              Foreground="Black"
+                              Width="24"
+                              Height="26" />
+                <TextBlock FontSize="36"
+                           Style="{StaticResource menuButtonText}"><Run Language="es-es"
+                                                                        Text="Student"
+                                                                        Foreground="#841617" /></TextBlock>
             </StackPanel>
         </Button>
 
