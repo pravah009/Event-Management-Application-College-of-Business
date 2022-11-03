@@ -24,6 +24,7 @@ namespace MIS_Prog_App
         public Admin()
         {
             InitializeComponent();
+           
 
 
 

@@ -33,7 +33,7 @@
                            Foreground="Black" FontWeight="Bold"/>
             </StackPanel>
         </Button>
-
+        
 
         <Button x:Name="StudentButton" Style="{StaticResource menuButton}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,239,0,135" Width="800" Click="StudentButton_Click">
             <StackPanel x:Name="DeleteButton" Orientation="Horizontal" Margin="295,0,271,0">
@@ -56,5 +56,6 @@
                    MaxWidth="1000"
                    >
             </Image>
+        <Label Content="Developed by Chukwuma Ilodibe, Pablo Gutierrez, and Pravah Malunjkar" HorizontalAlignment="Left" Margin="401,387,0,0" VerticalAlignment="Top" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
     </Grid>
 </Window>
