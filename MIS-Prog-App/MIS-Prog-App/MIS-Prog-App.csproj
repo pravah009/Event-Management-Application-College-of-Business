@@ -6,11 +6,11 @@
     <RootNamespace>MIS_Prog_App</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>bin\Debug\net6.0-windows\OU.ico</ApplicationIcon>
+    <ApplicationIcon>bin\Debug\net6.0-windows\Oklahoma_Sooners_logo.svg.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="bin\Debug\net6.0-windows\OU.ico" />
+    <Content Include="bin\Debug\net6.0-windows\Oklahoma_Sooners_logo.svg.ico" />
   </ItemGroup>
 
   <ItemGroup>
