@@ -54,8 +54,8 @@ namespace MIS_Prog_App
 
         private void AdminButton_Click(object sender, RoutedEventArgs e)
         {
-            Window adminWin = new Admin();
-            adminWin.Show();
+            Window passwordWindow = new Passwordwindow();
+            passwordWindow.Show();
             this.Close();
 
         }
