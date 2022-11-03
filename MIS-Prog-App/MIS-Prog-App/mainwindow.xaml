@@ -43,11 +43,9 @@
             </StackPanel>
         </Button>
 
-        <Image x:Name="Price_Logo"
-               
-               Source="https://www.ou.edu/price/_jcr_content/headeripar/image_1.img.png/1594132522181.png"
-               
-               Margin="33,37,540,317">
-        </Image>
+            <Image x:Name="Price_Logo"
+                   Source="https://www.ou.edu/price/_jcr_content/headeripar/image_1.img.png/1594132522181.png"
+                   Margin="33,37,540,317">
+            </Image>
     </Grid>
 </Window>
