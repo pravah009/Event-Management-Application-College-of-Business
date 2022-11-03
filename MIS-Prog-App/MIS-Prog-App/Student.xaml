@@ -99,7 +99,8 @@
             <ListBox Name="lstbxStudent"
                      Margin="8"
                      MouseDoubleClick="lstbxStudent_MouseDoubleClick"
-                     Background="#FDF9D8">
+                     Background="#FDF9D8"
+                     >
                 <ListBox.ItemContainerStyle>
                     <Style TargetType="ListBoxItem">
                         <Setter Property="BorderThickness" Value="0.5" />

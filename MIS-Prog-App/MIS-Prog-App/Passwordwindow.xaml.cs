@@ -26,6 +26,8 @@ namespace MIS_Prog_App
 
             InitializeComponent();
 
+            pwdBox.Focus();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

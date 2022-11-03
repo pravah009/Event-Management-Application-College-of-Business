@@ -29,6 +29,8 @@
             <Grid Visibility="Hidden"
                   Name="Gridd2"
                   Grid.Column="1"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Center"
                   >
 
                 <TextBlock Height="23" HorizontalAlignment="Left" Margin="15,63,0,0" x:Name="changeTitle" VerticalAlignment="Top" Width="60" FontWeight="Bold" ><Run Text="Event Title"/><Run Language="es-es" Text=":"/></TextBlock>
@@ -39,7 +41,7 @@
                 <TextBox Height="23" HorizontalAlignment="Left" Margin="83,105,0,0" x:Name="editLocation" VerticalAlignment="Top" Width="82" />
                 <TextBox Height="23" HorizontalAlignment="Left" Margin="84,150,0,0" x:Name="editStart" VerticalAlignment="Top" Width="81" />
                 <TextBox Height="23" HorizontalAlignment="Left" Margin="83,191,0,0" x:Name="editEnd" VerticalAlignment="Top" Width="82" />
-                <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="50,246,0,0" x:Name="editButton" VerticalAlignment="Top" Width="70" Click="editButton_Click" FontWeight="Bold" Background="Crimson" Foreground="MintCream" />
+                <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="50,246,0,0" x:Name="editButton" VerticalAlignment="Top" Width="70" Click="editButton_Click" FontWeight="Bold" Background="#841617 " Foreground="MintCream" />
 
             </Grid>
 
@@ -49,7 +51,7 @@
                  MouseDoubleClick="editListBox_MouseDoubleClick"
                  Margin="15,0,215,0"
                  Grid.ColumnSpan="2"
-                 Height="330"
+                 Height="390"
                  VerticalAlignment="Center"
                  Background="#FDF9D8">
             <ListBox.ItemContainerStyle>
@@ -60,10 +62,10 @@
                 </Style>
             </ListBox.ItemContainerStyle>
         </ListBox>
-        <Label Content="Double-click the event you would like to edit : " HorizontalAlignment="Left"
-               Margin="30,5,0,0"
-               VerticalAlignment="Top" Grid.ColumnSpan="2" Width="290" FontWeight="Bold"
-               FontSize="13" />
+        <Label Content="Double-click the event&#xD;&#xA; you would like to edit : " HorizontalAlignment="Left"
+               Margin="56,24,0,0"
+               VerticalAlignment="Top" Width="290" FontWeight="Bold"
+               FontSize="13" Grid.Column="1" />
 
 
     </Grid>
