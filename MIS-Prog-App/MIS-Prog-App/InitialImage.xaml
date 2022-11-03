@@ -10,8 +10,10 @@
       Background="#FDF9D8">
 
     <Grid>
-        <Image HorizontalAlignment="Center" Height="360" VerticalAlignment="Center" Width="634"
-               Source="https://images.squarespace-cdn.com/content/v1/570815def8baf3b9cbdcc796/1575663379834-4SMN8CVP8M5GBTMPZXHG/F7J2238.jpg"/>
+        <Image HorizontalAlignment="Center" Height="430" VerticalAlignment="Center" Width="740"
+               Source="https://images.squarespace-cdn.com/content/v1/570815def8baf3b9cbdcc796/1575663379834-4SMN8CVP8M5GBTMPZXHG/F7J2238.jpg"
+               MaxHeight="1000"
+               MaxWidth="1000"/>
 
     </Grid>
 </Page>

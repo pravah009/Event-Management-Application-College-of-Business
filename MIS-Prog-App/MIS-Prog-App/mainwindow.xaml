@@ -8,12 +8,17 @@
         mc:Ignorable="d"
         Height="450"
         Width="800"
-        Background="#FDF9D8"
+        
+        
         WindowStartupLocation="CenterScreen">
+
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/imagewithfilter.jpg"/>
+    </Window.Background>
 
     <Grid>
         <!--Menu Buttons-->
-        <Button x:Name="AdminButton" Style="{StaticResource menuButton}"  HorizontalAlignment="Center" Margin="0,132,0,240" Width="800" Click="AdminButton_Click" >
+        <Button x:Name="AdminButton" Style="{StaticResource menuButton}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,173,0,185" Width="800" Click="AdminButton_Click" >
             <StackPanel x:Name="Nothing" Orientation="Horizontal" Margin="300,0,0,0" HorizontalAlignment="Left" Width="340">
                 <fa:IconImage Icon="Pencil"
                               Style="{StaticResource menuButtonIcon}"
@@ -24,12 +29,13 @@
                            Style="{StaticResource menuButtonText}"
                            Text="Admin"
                            Height="47"
-                           Foreground="#841617"/>
+                           
+                           Foreground="Black" FontWeight="Bold"/>
             </StackPanel>
         </Button>
 
 
-        <Button x:Name="StudentButton" Style="{StaticResource menuButton}" HorizontalAlignment="Center" Margin="0,234,0,115" Width="800" Click="StudentButton_Click">
+        <Button x:Name="StudentButton" Style="{StaticResource menuButton}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,239,0,135" Width="800" Click="StudentButton_Click">
             <StackPanel x:Name="DeleteButton" Orientation="Horizontal" Margin="295,0,271,0">
                 <fa:IconImage Icon="Book"
                               Style="{StaticResource menuButtonIcon}"
@@ -39,7 +45,7 @@
                 <TextBlock FontSize="36"
                            Style="{StaticResource menuButtonText}"><Run Language="es-es"
                                                                         Text="Student"
-                                                                        Foreground="#841617" /></TextBlock>
+                                                                        Foreground="Black" FontWeight="Bold" /></TextBlock>
             </StackPanel>
         </Button>
 
@@ -47,7 +53,8 @@
                    Source="https://www.ou.edu/price/_jcr_content/headeripar/image_1.img.png/1594132522181.png"
                    Margin="33,37,540,317"
                    MaxHeight="100"
-                   MaxWidth="1000">
+                   MaxWidth="1000"
+                   >
             </Image>
     </Grid>
 </Window>
