@@ -7,6 +7,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
@@ -14,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Microsoft.Extensions.Logging;
 using MIS_Prog_App.Models;
-
+using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace MIS_Prog_App
 {
@@ -79,7 +80,7 @@ namespace MIS_Prog_App
             RegLN.Clear();
             RegEmail.Clear();
 
-            MessageBox.Show("Success!");
+            MessageBox.Show("Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             Gridd.Visibility = System.Windows.Visibility.Hidden;
 
